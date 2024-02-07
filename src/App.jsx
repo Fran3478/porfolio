@@ -1,6 +1,6 @@
 import Sidenav from './components/Sidenav'
 import Home from './components/Home'
-import AboutMe from './components/AboutMe'
+// import AboutMe from './components/AboutMe'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
       <div>
         <Sidenav />
         <Home />
-        <AboutMe />
+        {/* <AboutMe /> */}
       </div>
     </>
   )
