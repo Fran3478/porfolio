@@ -1,35 +1,14 @@
 import BackgroundItem from "./BackgroundItem"
-import KnowledgeItem from "./KnowledgeItem"
+import TechItems from "./TechItems"
+import { backgroundData, technologyData } from "../assets/data/data"
 
 const AboutMe = () => {
 
-    const backgroundData = [
-        {
-            id: 1,
-            title: "Higher Technician in Software Development",
-            dates: ["02/2020", "11/2023"],
-            description: "I completed my Higher Technician career at the San Jose Higher Institute, where I acquired knowledge not only about programming but also about several methodologies, strategies, and different approaches when solving specific problems."
 
-        },
-        {
-            id: 2,
-            title: "Full Stack Web Developer",
-            dates: ["05/2023", "10/2023"],
-            description: "I trained as a full stack web developer at Henry's bootcamp, completing over 800 hours of coursework. There, I learned tools and programming languages such as JavaScript, HTML, CSS, PostgreSQL, among others, as well as understanding the importance of fluid and effective communication while working in groups composed of people from different nationalities."
-
-        }
-    ]
-    const knowledgeData = [
-        {
-            id: 1,
-            title: "",
-            img: ""
-        }
-    ]
     return (
-        <div id="aboutMe" className="max-h-screen h-screen w-full m-auto grid grid-rows-2 xl:pr-20 xl:grid-cols-2">
-            <div className=" xl:col-span-2 ml-16 mt-16">
-                <div className="xl:col-start-1 w-2/3">
+        <div id="aboutMe" className="max-h-screen h-screen w-full m-auto flex flex-col md:grid md:grid-rows-2 lg:gap-x-10 md:grid-cols-2">
+            <div className="mt-6 mr-8 ml-14 md:m-auto md:ml-16 md:mt-16 justify-center">
+                <div className="md:col-start-1 xl:w-2/3">
                     <h1 className="text-2xl md:text-3xl lg:text-5xl text-[#062446] font-extrabold mb-8">Background</h1>
                     {
                         backgroundData.map((item) => (
@@ -44,18 +23,57 @@ const AboutMe = () => {
                     }
                 </div>
             </div>
-            <div className=" xl:col-span-2">
-                <div className="col-start-2 w-2/3">
-                    <h1 className="text-2xl md:text-3xl lg:text-5xl text-[#062446] font-extrabold mb-8">Technology Stack</h1>
-                    {
-                        knowledgeData.map((item) => (
-                            <KnowledgeItem
-                                key={item.id}
-                                title={item.title}
-                                img={item.img}
-                            />
-                        ))
-                    }
+            <div className="mt-6 mr-8 ml-14  md:m-auto md:grid md:grid-cols-subgrid md:gap-6 md:col-span-2 lg:mt-0">
+                <div className="md:mt-10 xl:mt-0 md:col-start-2 w-2/3">
+                    <h1 className="text-2xl md:text-3xl lg:text-5xl text-[#062446] font-extrabold">Tech Skills</h1>
+                    <div className="grid grid-cols-3 gap-3 text-center mt-5">
+                        <div className="">
+                            <h2 className="font-semibold text-base md:text-lg lg:text-2xl text-white bg-[#51A6F0] rounded-md">Front</h2>
+                            <div className="grid grid-cols-2 gap-2 mt-1">
+                                {
+                                    technologyData.filter((obj) => obj.cat === 'front').map((item) => (
+                                        <TechItems
+                                            key={item.id}
+                                            title={item.title}
+                                            img={item.img}
+                                        />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                        {/* <div className="h-[250px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100"></div> */}
+                        <div>
+                            <h2 className="font-semibold text-base md:text-lg lg:text-2xl text-white bg-[#51A6F0] rounded-md">Back</h2>
+                            <div className="grid grid-cols-2 gap-2 mt-1">
+                                {
+                                    technologyData.filter((obj) => obj.cat === 'back').map((item) => (
+                                        <TechItems
+                                            key={item.id}
+                                            title={item.title}
+                                            img={item.img}
+                                        />
+                                    ))
+                                }
+                            </div>
+
+                        </div>
+                        {/* <div className="h-[250px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-20 dark:opacity-100"></div> */}
+                        <div>
+                            <h2 className="font-semibold text-base md:text-lg lg:text-2xl text-white bg-[#51A6F0] rounded-md">Version Control</h2>
+                            <div className="grid grid-cols-2 gap-2 mt-1">
+                                {
+                                    technologyData.filter((obj) => obj.cat === 'version').map((item) => (
+                                        <TechItems
+                                            key={item.id}
+                                            title={item.title}
+                                            img={item.img}
+                                            alt={item.alt}
+                                        />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
