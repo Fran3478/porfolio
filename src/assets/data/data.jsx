@@ -14,77 +14,105 @@ const backgroundData = [
 
     }
 ]
-const knowledgeData = [
+const technologyData = [
     {
         id: 1,
-        title: "React",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707339365/portfolio-img/go5qsatwt2z3nghghuwx.svg"
+        title: "React.js",
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707339365/portfolio-img/go5qsatwt2z3nghghuwx.svg",
+        alt: "react-logo",
+        cat: "front"
     },
     {
         id: 2,
         title: "Vite",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338536/portfolio-img/dtmq0or0obnowtrle28b.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338536/portfolio-img/dtmq0or0obnowtrle28b.svg",
+        alt: "vite-logo",
+        cat: "front"
     },
     {
         id: 3,
         title: "Redux",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338388/portfolio-img/agedrtfbdpcrd5czdwrw.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338388/portfolio-img/agedrtfbdpcrd5czdwrw.svg",
+        alt: "redux-logo",
+        cat: "front"
     },
     {
         id: 4,
         title: "Tailwind CSS",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338716/portfolio-img/uugwgca4kkzei2lxxyhn.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338716/portfolio-img/uugwgca4kkzei2lxxyhn.svg",
+        alt: "tailwind-logo",
+        cat: "front"
     },
     {
         id: 5,
         title: "Javascript",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338722/portfolio-img/gqb72ecayzrorxqpawsw.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338722/portfolio-img/gqb72ecayzrorxqpawsw.svg",
+        alt: "javascript-logo",
+        cat: "front"
     },
     {
         id: 6,
         title: "HTML",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338966/portfolio-img/vz2zfucvrwkafqgogtap.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338966/portfolio-img/vz2zfucvrwkafqgogtap.svg",
+        alt: "html-logo",
+        cat: "front"
     },
     {
         id: 7,
         title: "CSS",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338979/portfolio-img/ogzpjbfjrmzng7a5n2tr.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338979/portfolio-img/ogzpjbfjrmzng7a5n2tr.svg",
+        alt: "css-logo",
+        cat: "front"
     },
     {
         id: 8,
         title: "Node.js",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338542/portfolio-img/njprdwqsfckfgzuw6cdh.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338542/portfolio-img/njprdwqsfckfgzuw6cdh.svg",
+        alt: "node-logo",
+        cat: "back"
     },
     {
         id: 9,
         title: "Express",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338559/portfolio-img/jpgfodlutz0tqxkxz7gw.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338559/portfolio-img/jpgfodlutz0tqxkxz7gw.svg",
+        alt: "express-logo",
+        cat: "back"
     },
     {
         id: 10,
         title: "PostgreSQL",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338554/portfolio-img/g1yd4cgklmy1wwb4cazz.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338554/portfolio-img/g1yd4cgklmy1wwb4cazz.svg",
+        alt: "postgreSQL-logo",
+        cat: "back"
     },
     {
         id: 11,
         title: "Sequelize",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338546/portfolio-img/r2zg5xfd62j1qg3ivyi6.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338546/portfolio-img/r2zg5xfd62j1qg3ivyi6.svg",
+        alt: "sequelize-logo",
+        cat: "back"
     },
     {
         id: 12,
         title: "Axios",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338564/portfolio-img/hydafyfntokoq2qxjmyx.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338564/portfolio-img/hydafyfntokoq2qxjmyx.svg",
+        alt: "axios-logo",
+        cat: "back"
     },
     {
         id: 13,
         title: "Git",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338568/portfolio-img/tyn7z8btiy81q4ozgq6n.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338568/portfolio-img/tyn7z8btiy81q4ozgq6n.svg",
+        alt: "git-logo",
+        cat: "version"
     },
     {
         id: 14,
         title: "GitHub",
-        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338960/portfolio-img/pugzlhlm4xuxzlufhb5s.svg"
+        img: "https://res.cloudinary.com/dacbde3so/image/upload/v1707338960/portfolio-img/pugzlhlm4xuxzlufhb5s.svg",
+        alt: "gitHub-logo",
+        cat: "version"
     }
 ]
 
-export { backgroundData, knowledgeData }
+export { backgroundData, technologyData }
