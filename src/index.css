@@ -5,5 +5,24 @@
 @layer base {
     html {
         scroll-behavior: smooth;
+
+        -webkit-scrollbar {
+            display: none;
+        }
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
+
 }
+
+
+
+/* .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollabar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
