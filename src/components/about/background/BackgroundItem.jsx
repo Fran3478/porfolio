@@ -1,6 +1,7 @@
 import { useState } from "react"
+import PropTypes from "prop-types"
 
-const BackgroundItem = ({ title, dates, description, img }) => {
+const BackgroundItem = ({ title, dates, description }) => {
     const [show, setShow] = useState(false)
     const handleShow = () => {
         setShow(!show)
@@ -18,9 +19,9 @@ const BackgroundItem = ({ title, dates, description, img }) => {
                     !show ?
                         <div>
                             <p className="my-2 text-sm lg:text-base font-normal text-stone-500">
-                                <span className="line-clamp-1 sm:line-clamp-2 lg:line-clamp-none">{description.split(' ').slice(0, 20).join(' ') + '...'}</span>
+                                <span className="line-clamp-1 sm:line-clamp-2 lg:line-clamp-none">{description.split(' ').slice(0, 30).join(' ') + '...'}</span>
                             </p>
-                            <p className="hover:cursor-pointer text-sky-600 underline" onClick={handleShow}>Show more...</p>
+                            <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={handleShow}>Show more...</p>
                         </div>
                         :
                         <div>
@@ -33,6 +34,12 @@ const BackgroundItem = ({ title, dates, description, img }) => {
             </li>
         </ol>
     )
+}
+
+BackgroundItem.propTypes = {
+    title: PropTypes.string,
+    dates: PropTypes.array,
+    description: PropTypes.string
 }
 
 export default BackgroundItem
