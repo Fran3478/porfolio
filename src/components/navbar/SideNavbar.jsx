@@ -1,30 +1,43 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
 import { LuFileDown } from "react-icons/lu";
+import Button from './Button';
 
 const SideNavbar = () => {
+    const buttons = [
+        {
+            url: "#home",
+            title: "Home",
+            icon: <AiOutlineHome />
+        },
+        {
+            url: "#aboutMe",
+            title: "About me",
+            icon: <AiOutlineUser />
+        },
+        {
+            url: "#projects",
+            title: "Projects",
+            icon: <AiOutlineProject />
+        },
+        {
+            url: "#contact",
+            title: "Contact",
+            icon: <AiOutlineMail />
+        },
+        {
+            url: "#resume",
+            title: "Resume",
+            icon: <LuFileDown />
+        }
+    ]
     return (
-        <div className='md:block hidden fixed right-5 top-[25%] z-10'>
-            <div className='flex flex-col items-end'>
-                <a href="#home" className='group rounded-full flex justify-end items-center shadow-md shadow-slate-600 bg-[#062446] m-2 p-4 cursor-pointer hover:scale-x-100'>
-                    <span className='hidden group-hover:block pr-4 text-white transform transition-transform duration-300 delay-150'>Home</span>
-                    <AiOutlineHome size={20} color='white' />
-                </a>
-                <a href="#aboutMe" className='group rounded-full flex justify-end items-center shadow-md shadow-slate-600 bg-[#062446] m-2 p-4 cursor-pointer transform transition-transform duration-400 hover:scale-x-100'>
-                    <span className='hidden group-hover:block pr-4 text-white transform transition-transform duration-300 delay-150'>About me</span>
-                    <AiOutlineUser size={20} color='white' />
-                </a>
-                <a href="#projects" className='group rounded-full flex justify-end items-center shadow-md shadow-slate-600 bg-[#062446] m-2 p-4 cursor-pointer transform transition-transform duration-300 hover:scale-x-100'>
-                    <span className='hidden group-hover:block pr-4 text-white transform transition-transform duration-300 delay-150'>Projects</span>
-                    <AiOutlineProject size={20} color='white' />
-                </a>
-                <a href="#contact" className='group rounded-full flex justify-end items-center shadow-md shadow-slate-600 bg-[#062446] m-2 p-4 cursor-pointer transform transition-transform duration-300 hover:scale-x-100'>
-                    <span className='hidden group-hover:inline-block pr-4 text-white transform transition-transform duration-300 delay-150'>Contact</span>
-                    <AiOutlineMail size={20} color='white' />
-                </a>
-                <a href="#resume" className='group rounded-full flex justify-end items-center shadow-md shadow-slate-600 bg-[#062446] m-2 p-4 cursor-pointer transform transition-transform duration-300 hover:scale-x-100'>
-                    <span className='hidden group-hover:block pr-4 text-white transform transition-transform duration-300 delay-150'>Resume</span>
-                    <LuFileDown size={20} color='white' />
-                </a>
+        <div className="hidden w-[4rem] h-screen right-0 fixed z-50 md:flex flex-col mr-[2rem]">
+            <div className="m-auto text-white text-2xl">
+                {
+                    buttons.map((button) => (
+                        <Button key={button.url} url={button.url} icon={button.icon} />
+                    ))
+                }
             </div>
         </div>
     )
