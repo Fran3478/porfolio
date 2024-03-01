@@ -1,25 +1,43 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
 import { LuFileDown } from "react-icons/lu";
+import Button from './Button';
 
 const SideNavbar = () => {
+    const buttons = [
+        {
+            url: "#home",
+            title: "Home",
+            icon: <AiOutlineHome />
+        },
+        {
+            url: "#aboutMe",
+            title: "About me",
+            icon: <AiOutlineUser />
+        },
+        {
+            url: "#projects",
+            title: "Projects",
+            icon: <AiOutlineProject />
+        },
+        {
+            url: "#contact",
+            title: "Contact",
+            icon: <AiOutlineMail />
+        },
+        {
+            url: "#resume",
+            title: "Resume",
+            icon: <LuFileDown />
+        }
+    ]
     return (
         <div className="hidden w-[4rem] h-screen right-0 fixed z-50 md:flex flex-col mr-[2rem]">
             <div className="m-auto text-white text-2xl">
-                <a href="#home" className='bg-[#062446] rounded-full w-fit flex m-2 p-4 cursor-pointer hover:scale-125 hover:brightness-150 transition-all duration-300'>
-                    <AiOutlineHome />
-                </a>
-                <a href="#aboutMe" className='bg-[#062446] rounded-full w-fit flex m-2 p-4 cursor-pointer hover:scale-125 hover:brightness-150 transition-all duration-300'>
-                    <AiOutlineUser />
-                </a>
-                <a href="#projects" className='bg-[#062446] rounded-full w-fit flex m-2 p-4 cursor-pointer hover:scale-125 hover:brightness-150 transition-all duration-300'>
-                    <AiOutlineProject />
-                </a>
-                <a href="#contact" className='bg-[#062446] rounded-full w-fit flex m-2 p-4 cursor-pointer hover:scale-125 hover:brightness-150 transition-all duration-300'>
-                    <AiOutlineMail />
-                </a>
-                <a href="#resume" className='bg-[#062446] rounded-full w-fit flex m-2 p-4 cursor-pointer hover:scale-125 hover:brightness-150 transition-all duration-300'>
-                    <LuFileDown />
-                </a>
+                {
+                    buttons.map((button) => (
+                        <Button key={button.url} url={button.url} icon={button.icon} />
+                    ))
+                }
             </div>
         </div>
     )
