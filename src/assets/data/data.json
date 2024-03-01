@@ -145,7 +145,8 @@
             "alt": "dearq",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
             "deploy": "",
-            "repo": ""
+            "repo": "",
+            "status": "working on"
         }
     ]
 }
