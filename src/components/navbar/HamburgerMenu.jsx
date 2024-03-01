@@ -1,5 +1,6 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
 import { LuFileDown } from "react-icons/lu";
+import PropTypes from "prop-types"
 
 const HamburgerMenu = ({ handleNav }) => {
     return (
@@ -26,6 +27,10 @@ const HamburgerMenu = ({ handleNav }) => {
             </a>
         </div>
     )
+}
+
+HamburgerMenu.propTypes = {
+    handleNav: PropTypes.func
 }
 
 export default HamburgerMenu

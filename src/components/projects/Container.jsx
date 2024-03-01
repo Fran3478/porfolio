@@ -15,6 +15,7 @@ const Container = () => {
                         description={item.description}
                         deploy={item.deploy}
                         repo={item.repo}
+                        status={item.status}
                     />
                 ))
             }

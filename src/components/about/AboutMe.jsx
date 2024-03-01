@@ -5,25 +5,28 @@ import data from "../../assets/data/data.json"
 const AboutMe = () => {
 
     return (
-        <div id="aboutMe" className="text-center sm:text-left min-h-fit h-full w-full m-auto ">
-            <div className="flex flex-col md:grid md:grid-cols-12 md:grid-rows-2 m-auto mt-6 mx-[2rem] sm:ml-[3.8rem] sm:mr-[3.8rem] md:mt-10 md:mr-[8rem]">
-                <div className="sm:col-span-10 sm:col-start-3 md:col-span-9 md:col-start-4 lg:col-span-8 lg:col-start-5 xl:col-span-7 xl:col-start-7">
-                    <h1 className="text-2xl md:text-3xl lg:text-5xl text-[#062446] font-extrabold">Tech Skills</h1>
-                    <Container />
-                </div>
-                <div className="md:row-start-2 md:col-span-9 lg:col-span-8 xl:col-span-6 pb-10">
-                    <h1 className="text-2xl md:text-3xl lg:text-5xl text-[#062446] font-extrabold my-8">Background</h1>
-                    {
-                        data.knowledge.map((item) => (
-                            <BackgroundItem
-                                key={item.id}
-                                title={item.title}
-                                dates={item.dates}
-                                description={item.description}
-                                urlImg={item.img}
-                            />
-                        ))
-                    }
+        <div id="aboutMe" className="text-center sm:text-left min-h-fit h-full w-full m-auto bg-[#ace9c368] ">
+            <div className="m-auto py-6 mx-[2rem] sm:ml-[3.8rem] sm:mr-[3.8rem] md:py-10 md:mr-[8rem]">
+                <h1 className="text-2xl md:text-3xl lg:text-5xl text-[#062446] font-extrabold">About</h1>
+                <div className="grid grid-cols-12 md:grid-rows-2">
+                    <div className="pt-4 md:pt-0 col-span-12 md:col-span-11 md:col-start-2 lg:col-span-8 lg:col-start-5 xl:col-span-7 xl:col-start-7">
+                        <h2 className="text-xl md:text-2xl lg:text-3xl text-[#062446] font-bold pb-5">Tech Skills</h2>
+                        <Container />
+                    </div>
+                    <div className="pt-4 md:pt-0 row-start-2 col-span-12 md:col-span-11 md:col-start-2 lg:col-span-8 xl:col-span-6">
+                        <h2 className="text-xl md:text-2xl lg:text-3xl text-[#062446] font-bold pb-5">Background</h2>
+                        {
+                            data.knowledge.map((item) => (
+                                <BackgroundItem
+                                    key={item.id}
+                                    title={item.title}
+                                    dates={item.dates}
+                                    description={item.description}
+                                    urlImg={item.img}
+                                />
+                            ))
+                        }
+                    </div>
                 </div>
             </div>
         </div>

@@ -127,7 +127,8 @@
             "alt": "sinergia-coworking",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
             "deploy": "",
-            "repo": "https://github.com/Fran3478/SinergiaCoworking"
+            "repo": "https://github.com/Fran3478/SinergiaCoworking",
+            "status": "finished"
         },
         {
             "id": 2,
@@ -136,7 +137,8 @@
             "alt": "personal-porfolio",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
             "deploy": "https://fran3478.github.io/porfolio/",
-            "repo": "https://github.com/Fran3478/porfolio"
+            "repo": "https://github.com/Fran3478/porfolio",
+            "status": "working on"
         },
         {
             "id": 3,
@@ -146,7 +148,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
             "deploy": "",
             "repo": "",
-            "status": "working on"
+            "status": "wprking on"
         }
     ]
 }
