@@ -1,6 +1,7 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
 import { LuFileDown } from "react-icons/lu";
-import Button from './Button';
+import NavbarButton from '../buttons/NavbarButton';
+import resume from "/porfolio/pdf/resume_en.pdf"
 
 const SideNavbar = () => {
     const buttons = [
@@ -25,7 +26,9 @@ const SideNavbar = () => {
             icon: <AiOutlineMail />
         },
         {
-            url: "#resume",
+            url: resume,
+            downloadable: true,
+            name: "Resume-Francisco Hernandez.pdf",
             title: "Resume",
             icon: <LuFileDown />
         }
@@ -35,7 +38,7 @@ const SideNavbar = () => {
             <div className="m-auto text-white text-2xl">
                 {
                     buttons.map((button) => (
-                        <Button key={button.url} url={button.url} icon={button.icon} />
+                        button.downloadable ? <NavbarButton key={button.url} url={button.url} icon={button.icon} downloadable name={button.name} /> : <NavbarButton key={button.url} url={button.url} icon={button.icon} />
                     ))
                 }
             </div>
