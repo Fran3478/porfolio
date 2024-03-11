@@ -1,7 +1,6 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
 import { LuFileDown } from "react-icons/lu";
 import NavbarButton from '../buttons/NavbarButton';
-import resume from "/porfolio/pdf/resume_en.pdf"
 
 const SideNavbar = () => {
     const buttons = [
@@ -26,7 +25,7 @@ const SideNavbar = () => {
             icon: <AiOutlineMail />
         },
         {
-            url: resume,
+            url: "/porfolio/pdf/resume_en.pdf",
             downloadable: true,
             name: "Resume-Francisco Hernandez.pdf",
             title: "Resume",
