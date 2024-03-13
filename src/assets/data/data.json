@@ -95,14 +95,42 @@
             "title": "Git",
             "svg": "/porfolio/svg/git-logo.svg",
             "alt": "git-logo",
-            "cat": "version-control"
+            "cat": "others"
         },
         {
             "id": 14,
             "title": "GitHub",
             "svg": "/porfolio/svg/github-logo.svg",
             "alt": "gitHub-logo",
-            "cat": "version-control"
+            "cat": "others"
+        },
+        {
+            "id": 15,
+            "title": "Cloudinary",
+            "svg": "/porfolio/svg/cloudinary-logo.svg",
+            "alt": "cloudinary-logo",
+            "cat": "others"
+        },
+        {
+            "id": 16,
+            "title": "Axios",
+            "svg": "/porfolio/svg/axios-logo.svg",
+            "alt": "axios-logo",
+            "cat": "back"
+        },
+        {
+            "id": 17,
+            "title": "Sequelize",
+            "svg": "/porfolio/svg/sequelize-logo.svg",
+            "alt": "sequelize-logo",
+            "cat": "back"
+        },
+        {
+            "id": 18,
+            "title": "VS Code",
+            "svg": "/porfolio/svg/vscode-logo.svg",
+            "alt": "vscode-logo",
+            "cat": "others"
         }
     ],
     "techCat": [
@@ -115,8 +143,8 @@
             "cat": "back"
         },
         {
-            "title": "Version Control",
-            "cat": "version-control"
+            "title": "Others",
+            "cat": "others"
         }
     ],
     "projectData": [
