@@ -1,5 +1,5 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser, AiOutlineFilePdf } from 'react-icons/ai'
-import Button from './Button';
+import NavbarButton from '../buttons/NavbarButton';
 
 const SideNavbar = () => {
     const buttons = [
@@ -24,7 +24,9 @@ const SideNavbar = () => {
             icon: <AiOutlineMail />
         },
         {
-            url: "#resume",
+            url: "/porfolio/pdf/resume_en.pdf",
+            downloadable: true,
+            name: "Resume-Francisco Hernandez.pdf",
             title: "Resume",
             icon: <AiOutlineFilePdf />
         }
@@ -34,7 +36,7 @@ const SideNavbar = () => {
             <div className="m-auto text-white text-2xl">
                 {
                     buttons.map((button) => (
-                        <Button key={button.url} url={button.url} icon={button.icon} />
+                        button.downloadable ? <NavbarButton key={button.url} url={button.url} icon={button.icon} downloadable name={button.name} /> : <NavbarButton key={button.url} url={button.url} icon={button.icon} />
                     ))
                 }
             </div>
