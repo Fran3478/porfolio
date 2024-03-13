@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation"
 
 const Home = () => {
   return (
-    <div id='home' className="bg-[#062446] flex w-screen h-screen flex-col md:flex-row overflow-hidden">
+    <div id='home' className="bg-[#062446] flex max-w-screen min-h-screen max-h-fit h-screen flex-col md:flex-row overflow-hidden">
       <div className="w-full h-2/3 flex items-center sm:items-start sm:relative md:h-full md:w-2/3 select-none">
         <div className="m-14 text-center top-1/4 sm:absolute sm:text-left sm:mr-24 sm:ml-24">
           <h1 className="text-4xl md:text-5xl lg:text-7xl lg:mr-20 font-extrabold text-white">Francisco Hernandez</h1>
@@ -18,7 +18,6 @@ const Home = () => {
             />
           </h2>
         </div>
-        <div></div>
       </div>
       <div className="flex md:flex-col justify-center md:justify-normal bg-transparent w-full h-1/3 md:h-full md:w-1/3 relative select-none">
         <div className="md:absolute md:inset-x-10 md:inset-y-0 bg-[#51A6F0] w-[190%] md:skew-x-[-20deg] md:origin-center"></div>
