@@ -36,9 +36,9 @@ const Navbar = () => {
         <div>
             {
                 !nav ? (
-                    <AiOutlineMenu onClick={handleNav} className={`fixed mt-4 left-4 z-[99] md:hidden transition-transform duration-300 transform ${showNav ? 'translate-y-0' : '-translate-y-96'}`} color='white' size={28} />
+                    <AiOutlineMenu onClick={handleNav} className={`fixed w-[1.8rem] mt-4 left-4 z-[99] md:hidden transition-transform duration-300 transform ${showNav ? 'translate-y-0' : '-translate-y-96'}`} color='white' size={28} />
                 ) : (
-                    <AiOutlineClose onClick={handleNav} className='fixed top-4 left-4 z-[99] md:hidden' color='white' size={28} />
+                    <AiOutlineClose onClick={handleNav} className='fixed w-[1.8rem] top-4 left-4 z-[99] md:hidden' color='white' size={28} />
                 )
             }
 

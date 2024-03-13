@@ -1,0 +1,182 @@
+{
+    "knowledge": [
+        {
+            "id": 1,
+            "title": "Higher Technician in Software Development",
+            "dates": [
+                "02/2020",
+                "11/2023"
+            ],
+            "description": "I completed my Higher Technician career at the San Jose Higher Institute, where I acquired knowledge not only about programming but also about several methodologies, strategies, and different approaches when solving specific problems."
+        },
+        {
+            "id": 2,
+            "title": "Full Stack Web Developer",
+            "dates": [
+                "05/2023",
+                "10/2023"
+            ],
+            "description": "I trained as a full stack web developer at Henry's bootcamp, completing over 800 hours of coursework. There, I learned tools and programming languages such as JavaScript, HTML, CSS, PostgreSQL, among others, as well as understanding the importance of fluid and effective communication while working in groups composed of people from different nationalities."
+        }
+    ],
+    "techSkill": [
+        {
+            "id": 1,
+            "title": "React.js",
+            "svg": "/porfolio/svg/react-logo.svg",
+            "alt": "react-logo",
+            "cat": "front"
+        },
+        {
+            "id": 2,
+            "title": "Vite",
+            "svg": "/porfolio/svg/vite-logo.svg",
+            "alt": "vite-logo",
+            "cat": "front"
+        },
+        {
+            "id": 3,
+            "title": "Redux",
+            "svg": "/porfolio/svg/redux-logo.svg",
+            "alt": "redux-logo",
+            "cat": "front"
+        },
+        {
+            "id": 4,
+            "title": "Tailwind",
+            "svg": "/porfolio/svg/tailwindcss-logo.svg",
+            "alt": "tailwind-logo",
+            "cat": "front"
+        },
+        {
+            "id": 5,
+            "title": "JavaScript",
+            "svg": "/porfolio/svg/javascript-logo.svg",
+            "alt": "javascript-logo",
+            "cat": "front"
+        },
+        {
+            "id": 6,
+            "title": "HTML",
+            "svg": "/porfolio/svg/html-logo.svg",
+            "alt": "html-logo",
+            "cat": "front"
+        },
+        {
+            "id": 7,
+            "title": "CSS",
+            "svg": "/porfolio/svg/css-logo.svg",
+            "alt": "css-logo",
+            "cat": "front"
+        },
+        {
+            "id": 8,
+            "title": "Node.js",
+            "svg": "/porfolio/svg/node-logo.svg",
+            "alt": "node-logo",
+            "cat": "back"
+        },
+        {
+            "id": 9,
+            "title": "Express.js",
+            "svg": "/porfolio/svg/express-logo.svg",
+            "alt": "express-logo",
+            "cat": "back"
+        },
+        {
+            "id": 12,
+            "title": "PostgreSQL",
+            "svg": "/porfolio/svg/postgreslq-logo.svg",
+            "alt": "postgreSQL-logo",
+            "cat": "back"
+        },
+        {
+            "id": 13,
+            "title": "Git",
+            "svg": "/porfolio/svg/git-logo.svg",
+            "alt": "git-logo",
+            "cat": "others"
+        },
+        {
+            "id": 14,
+            "title": "GitHub",
+            "svg": "/porfolio/svg/github-logo.svg",
+            "alt": "gitHub-logo",
+            "cat": "others"
+        },
+        {
+            "id": 15,
+            "title": "Cloudinary",
+            "svg": "/porfolio/svg/cloudinary-logo.svg",
+            "alt": "cloudinary-logo",
+            "cat": "others"
+        },
+        {
+            "id": 16,
+            "title": "Axios",
+            "svg": "/porfolio/svg/axios-logo.svg",
+            "alt": "axios-logo",
+            "cat": "back"
+        },
+        {
+            "id": 17,
+            "title": "Sequelize",
+            "svg": "/porfolio/svg/sequelize-logo.svg",
+            "alt": "sequelize-logo",
+            "cat": "back"
+        },
+        {
+            "id": 18,
+            "title": "VS Code",
+            "svg": "/porfolio/svg/vscode-logo.svg",
+            "alt": "vscode-logo",
+            "cat": "others"
+        }
+    ],
+    "techCat": [
+        {
+            "title": "Front",
+            "cat": "front"
+        },
+        {
+            "title": "Back",
+            "cat": "back"
+        },
+        {
+            "title": "Others",
+            "cat": "others"
+        }
+    ],
+    "projectData": [
+        {
+            "id": 1,
+            "title": "Sinergia Coworking",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg",
+            "alt": "sinergia-coworking",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
+            "deploy": "",
+            "repo": "https://github.com/Fran3478/SinergiaCoworking",
+            "status": "finished"
+        },
+        {
+            "id": 2,
+            "title": "Personal Porfolio",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg",
+            "alt": "personal-porfolio",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
+            "deploy": "https://fran3478.github.io/porfolio/",
+            "repo": "https://github.com/Fran3478/porfolio",
+            "status": "working on"
+        },
+        {
+            "id": 3,
+            "title": "DEArq",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg",
+            "alt": "dearq",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
+            "deploy": "",
+            "repo": "",
+            "status": "working on"
+        }
+    ]
+}
