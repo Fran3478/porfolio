@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
-import { FaGithub } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb";
+import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 
 const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status = "working on" }) => {
 
@@ -16,8 +15,8 @@ const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status = "
             </div>
             <p className="p-[1.7rem] hidden lg:block">{description}</p>
             <div className="pt-5 lg:p-0 flex justify-around">
-                <a className="bg-[#51A6F0] rounded-full text-2xl md:text-3xl lg:text-5xl p-2 hover:scale-110 hover:contrast-125 ease-in-out transition-all duration-300" href={repo} target="_blank" rel="noreferrer"><FaGithub /></a>
-                <a className="bg-[#51A6F0] rounded-full text-2xl md:text-3xl lg:text-5xl p-2 hover:scale-110 hover:contrast-125 ease-in-out transition-all duration-300" href={deploy} target="_blank" rel="noreferrer"><TbWorld /></a>
+                <a className="bg-[#51A6F0] rounded-full text-2xl md:text-3xl lg:text-5xl p-2 hover:scale-110 hover:contrast-125 ease-in-out transition-all duration-300" href={repo} target="_blank" rel="noreferrer"><AiOutlineGithub /></a>
+                <a className="bg-[#51A6F0] rounded-full text-2xl md:text-3xl lg:text-5xl p-2 hover:scale-110 hover:contrast-125 ease-in-out transition-all duration-300" href={deploy} target="_blank" rel="noreferrer"><AiOutlineLink /></a>
             </div>
         </div>
     )
