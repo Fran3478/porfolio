@@ -1,5 +1,4 @@
-import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
-import { LuFileDown } from "react-icons/lu";
+import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser, AiOutlineFilePdf } from 'react-icons/ai'
 import NavbarButton from '../buttons/NavbarButton';
 
 const SideNavbar = () => {
@@ -29,7 +28,7 @@ const SideNavbar = () => {
             downloadable: true,
             name: "Resume-Francisco Hernandez.pdf",
             title: "Resume",
-            icon: <LuFileDown />
+            icon: <AiOutlineFilePdf />
         }
     ]
     return (
