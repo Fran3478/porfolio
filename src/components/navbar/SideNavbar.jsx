@@ -1,5 +1,4 @@
-import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
-import { LuFileDown } from "react-icons/lu";
+import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser, AiOutlineFilePdf } from 'react-icons/ai'
 import Button from './Button';
 
 const SideNavbar = () => {
@@ -27,7 +26,7 @@ const SideNavbar = () => {
         {
             url: "#resume",
             title: "Resume",
-            icon: <LuFileDown />
+            icon: <AiOutlineFilePdf />
         }
     ]
     return (
