@@ -1,4 +1,4 @@
-import Navbar from './components/navbar/NavBar'
+import Navbar from './components/navbar/Navbar'
 import Home from './components/Home'
 import AboutMe from './components/about/AboutMe'
 import Projects from './components/projects/Projects'
