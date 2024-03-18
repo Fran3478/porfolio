@@ -1,5 +1,6 @@
 import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser, AiOutlineFilePdf } from 'react-icons/ai'
 import NavbarButton from '../buttons/NavbarButton';
+import pdf from "../../assets/pdf/resume_en.pdf"
 
 const SideNavbar = () => {
     const buttons = [
@@ -24,7 +25,7 @@ const SideNavbar = () => {
             icon: <AiOutlineMail />
         },
         {
-            url: "/porfolio/pdf/resume_en.pdf",
+            url: pdf,
             downloadable: true,
             name: "Resume-Francisco Hernandez.pdf",
             title: "Resume",

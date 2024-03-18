@@ -23,112 +23,112 @@
         {
             "id": 1,
             "title": "React.js",
-            "svg": "/porfolio/svg/react-logo.svg",
+            "svg": "../svg/react-logo.svg",
             "alt": "react-logo",
             "cat": "front"
         },
         {
             "id": 2,
             "title": "Vite",
-            "svg": "/porfolio/svg/vite-logo.svg",
+            "svg": "../svg/vite-logo.svg",
             "alt": "vite-logo",
             "cat": "front"
         },
         {
             "id": 3,
             "title": "Redux",
-            "svg": "/porfolio/svg/redux-logo.svg",
+            "svg": "../svg/redux-logo.svg",
             "alt": "redux-logo",
             "cat": "front"
         },
         {
             "id": 4,
             "title": "Tailwind",
-            "svg": "/porfolio/svg/tailwindcss-logo.svg",
+            "svg": "../svg/tailwindcss-logo.svg",
             "alt": "tailwind-logo",
             "cat": "front"
         },
         {
             "id": 5,
             "title": "JavaScript",
-            "svg": "/porfolio/svg/javascript-logo.svg",
+            "svg": "../svg/javascript-logo.svg",
             "alt": "javascript-logo",
             "cat": "front"
         },
         {
             "id": 6,
             "title": "HTML",
-            "svg": "/porfolio/svg/html-logo.svg",
+            "svg": "../svg/html-logo.svg",
             "alt": "html-logo",
             "cat": "front"
         },
         {
             "id": 7,
             "title": "CSS",
-            "svg": "/porfolio/svg/css-logo.svg",
+            "svg": "../svg/css-logo.svg",
             "alt": "css-logo",
             "cat": "front"
         },
         {
             "id": 8,
             "title": "Node.js",
-            "svg": "/porfolio/svg/node-logo.svg",
+            "svg": "../svg/node-logo.svg",
             "alt": "node-logo",
             "cat": "back"
         },
         {
             "id": 9,
             "title": "Express.js",
-            "svg": "/porfolio/svg/express-logo.svg",
+            "svg": "../svg/express-logo.svg",
             "alt": "express-logo",
             "cat": "back"
         },
         {
             "id": 12,
             "title": "PostgreSQL",
-            "svg": "/porfolio/svg/postgreslq-logo.svg",
+            "svg": "../svg/postgreslq-logo.svg",
             "alt": "postgreSQL-logo",
             "cat": "back"
         },
         {
             "id": 13,
             "title": "Git",
-            "svg": "/porfolio/svg/git-logo.svg",
+            "svg": "../svg/git-logo.svg",
             "alt": "git-logo",
             "cat": "others"
         },
         {
             "id": 14,
             "title": "GitHub",
-            "svg": "/porfolio/svg/github-logo.svg",
+            "svg": "../svg/github-logo.svg",
             "alt": "gitHub-logo",
             "cat": "others"
         },
         {
             "id": 15,
             "title": "Cloudinary",
-            "svg": "/porfolio/svg/cloudinary-logo.svg",
+            "svg": "../svg/cloudinary-logo.svg",
             "alt": "cloudinary-logo",
             "cat": "others"
         },
         {
             "id": 16,
             "title": "Axios",
-            "svg": "/porfolio/svg/axios-logo.svg",
+            "svg": "../svg/axios-logo.svg",
             "alt": "axios-logo",
             "cat": "back"
         },
         {
             "id": 17,
             "title": "Sequelize",
-            "svg": "/porfolio/svg/sequelize-logo.svg",
+            "svg": "../svg/sequelize-logo.svg",
             "alt": "sequelize-logo",
             "cat": "back"
         },
         {
             "id": 18,
             "title": "VS Code",
-            "svg": "/porfolio/svg/vscode-logo.svg",
+            "svg": "../svg/vscode-logo.svg",
             "alt": "vscode-logo",
             "cat": "others"
         }
