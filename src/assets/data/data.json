@@ -23,112 +23,112 @@
         {
             "id": 1,
             "title": "React.js",
-            "svg": "../svg/react-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/gg1ugmjzq1jm9zybrnrm.svg",
             "alt": "react-logo",
             "cat": "front"
         },
         {
             "id": 2,
             "title": "Vite",
-            "svg": "../svg/vite-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/kd2dw4mdgqpcnvdixbzp.svg",
             "alt": "vite-logo",
             "cat": "front"
         },
         {
             "id": 3,
             "title": "Redux",
-            "svg": "../svg/redux-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/nd2id4awjysrxlx1bhfw.svg",
             "alt": "redux-logo",
             "cat": "front"
         },
         {
             "id": 4,
             "title": "Tailwind",
-            "svg": "../svg/tailwindcss-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/z1mqkftk1bnc2atmwtkw.svg",
             "alt": "tailwind-logo",
             "cat": "front"
         },
         {
             "id": 5,
             "title": "JavaScript",
-            "svg": "../svg/javascript-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/mbxpp5tqmtoobuaphjpv.svg",
             "alt": "javascript-logo",
             "cat": "front"
         },
         {
             "id": 6,
             "title": "HTML",
-            "svg": "../svg/html-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/ramnfdwqmdiwaiw1twz2.svg",
             "alt": "html-logo",
             "cat": "front"
         },
         {
             "id": 7,
             "title": "CSS",
-            "svg": "../svg/css-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740046/portfolio-img/svgs/bkalcdxfmdhovakb5mcz.svg",
             "alt": "css-logo",
             "cat": "front"
         },
         {
             "id": 8,
             "title": "Node.js",
-            "svg": "../svg/node-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/whwzs7ihrw9mclkuj4qu.svg",
             "alt": "node-logo",
             "cat": "back"
         },
         {
             "id": 9,
             "title": "Express.js",
-            "svg": "../svg/express-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740047/portfolio-img/svgs/iwlubzh7it5d3mzwodu4.svg",
             "alt": "express-logo",
             "cat": "back"
         },
         {
             "id": 12,
             "title": "PostgreSQL",
-            "svg": "../svg/postgreslq-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/vyos170lyhynxynclz3t.svg",
             "alt": "postgreSQL-logo",
             "cat": "back"
         },
         {
             "id": 13,
             "title": "Git",
-            "svg": "../svg/git-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/jebbkdjd1hkz43fiwgpu.svg",
             "alt": "git-logo",
             "cat": "others"
         },
         {
             "id": 14,
             "title": "GitHub",
-            "svg": "../svg/github-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/ghrcpq6ds7syv5eiaegr.svg",
             "alt": "gitHub-logo",
             "cat": "others"
         },
         {
             "id": 15,
             "title": "Cloudinary",
-            "svg": "../svg/cloudinary-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740046/portfolio-img/svgs/lmqbjz52pftvejxkhjzd.svg",
             "alt": "cloudinary-logo",
             "cat": "others"
         },
         {
             "id": 16,
             "title": "Axios",
-            "svg": "../svg/axios-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740045/portfolio-img/svgs/nmytnoye5fulgy08g6li.svg",
             "alt": "axios-logo",
             "cat": "back"
         },
         {
             "id": 17,
             "title": "Sequelize",
-            "svg": "../svg/sequelize-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/lpmqkhqf0cpopl8nbr69.svg",
             "alt": "sequelize-logo",
             "cat": "back"
         },
         {
             "id": 18,
             "title": "VS Code",
-            "svg": "../svg/vscode-logo.svg",
+            "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/netlbvjwzm1sbxwm1buu.svg",
             "alt": "vscode-logo",
             "cat": "others"
         }
