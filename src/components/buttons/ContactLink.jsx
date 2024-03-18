@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 
-const Button = ({ title, url = '#', icon }) => {
+const ContactLink = ({ title, url = '#', icon }) => {
 
     return (
         <a href={url} className="relative inline-flex items-center justify-center px-0 py-1 md:p-4 md:px-6 md:py-3 overflow-hidden font-medium transition duration-300 ease-out border-2 border-[#1ab0ba] rounded-lg md:rounded-full group m-auto">
@@ -13,10 +13,10 @@ const Button = ({ title, url = '#', icon }) => {
     )
 }
 
-Button.propTypes = {
+ContactLink.propTypes = {
     title: PropTypes.string,
     url: PropTypes.string,
     icon: PropTypes.element
 }
 
-export default Button
+export default ContactLink
