@@ -62,16 +62,14 @@ const ContactForm = () => {
             }
         ]
         const passCheck = bulkCheck(fields)
+        const text = `New contact!\nName: ${name || "not provided"}\nEmail: ${email}\nMessage: ${message}`
         if (passCheck) {
-            axios.post(import.meta.env.VITE_SERVER_URL, {
-                name,
-                email,
-                message
-            }).then(response => {
-                console.log(response)
-            }).catch(err => {
-                console.log(err)
-            })
+            axios.get(`https://api.telegram.org/bot${import.meta.env.VITE_BOT_TOKEN}/sendMessage?chat_id=${import.meta.env.VITE_CHAT_ID}&text=${text}`)
+                .then(response => {
+                    console.log(response)
+                }).catch(err => {
+                    console.log(err)
+                })
         }
     }
 
