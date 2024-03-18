@@ -1,8 +1,9 @@
 import { useState } from "react"
-import Button from "./Button"
+import axios from "axios"
+import ContactButton from "../buttons/ContactButton"
 import Error from "../error/Error"
-import { GoArrowRight } from "react-icons/go";
-import inputCheck from "../../assets/validator"
+import { AiOutlineSend } from "react-icons/ai"
+import { inputCheck, bulkCheck } from "../../assets/validator"
 
 const ContactForm = () => {
     const [name, setName] = useState('')
@@ -12,29 +13,65 @@ const ContactForm = () => {
     const [emailError, setEmailError] = useState("")
     const [messageError, setMessageError] = useState("")
 
-    const handleChange = ({ target }) => {
-        if (target.name === "name") {
-            setName(target.value)
-            setNameError(inputCheck(target.name, target.value))
+    const checkErrors = ({ name, value }) => {
+        if (name === "name") {
+            setNameError(inputCheck(name, value))
         }
-        if (target.name === "email") {
-            setEmail(target.value)
-            setEmailError(inputCheck(target.name, target.value))
+        if (name === "email") {
+            setEmailError(inputCheck(name, value))
         }
-        if (target.name === "message") {
-            setMessage(target.value)
-            setMessageError(inputCheck(target.name, target.value))
+        if (name === "message") {
+            setMessageError(inputCheck(name, value))
         }
     }
+    const handleChange = ({ target }) => {
+        const name = target.name
+        const value = target.value
+        if (name === "name") {
+            setName(value)
+        }
+        if (name === "email") {
+            setEmail(value)
+        }
+        if (name === "message") {
+            setMessage(value)
+        }
+        checkErrors({ name, value })
+    }
     const handleFocusOut = ({ target }) => {
-        if (target.name === "name") {
-            setNameError(inputCheck(target.name, target.value))
-        }
-        if (target.name === "email") {
-            setEmailError(inputCheck(target.name, target.value))
-        }
-        if (target.name === "message") {
-            setMessageError(inputCheck(target.name, target.value))
+        const name = target.name
+        const value = target.value
+        checkErrors({ name, value })
+    }
+    const handleClick = () => {
+        const fields = [
+            {
+                field: "name",
+                value: name,
+                error: setNameError
+            },
+            {
+                field: "email",
+                value: email,
+                error: setEmailError
+            },
+            {
+                field: "message",
+                value: message,
+                error: setMessageError
+            }
+        ]
+        const passCheck = bulkCheck(fields)
+        if (passCheck) {
+            axios.post(import.meta.env.VITE_SERVER_URL, {
+                name,
+                email,
+                message
+            }).then(response => {
+                console.log(response)
+            }).catch(err => {
+                console.log(err)
+            })
         }
     }
 
@@ -94,7 +131,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <Button icon={<GoArrowRight />} title={"Send"} />
+                <ContactButton icon={<AiOutlineSend />} title={"Send"} onClick={handleClick} />
             </div>
         </div>
     )
