@@ -1,36 +1,97 @@
 import { useState } from "react"
 import Button from "./Button"
+import Error from "../error/Error"
 import { GoArrowRight } from "react-icons/go";
+import inputCheck from "../../assets/validator"
 
 const ContactForm = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [nameError, setNameError] = useState("")
+    const [emailError, setEmailError] = useState("")
+    const [messageError, setMessageError] = useState("")
 
     const handleChange = ({ target }) => {
-        const change = target.name
-        change === 'name' ?
-            setName(target.value) :
-            change === "email" ?
-                setEmail(target.value) :
-                setMessage(target.value)
+        if (target.name === "name") {
+            setName(target.value)
+            setNameError(inputCheck(target.name, target.value))
+        }
+        if (target.name === "email") {
+            setEmail(target.value)
+            setEmailError(inputCheck(target.name, target.value))
+        }
+        if (target.name === "message") {
+            setMessage(target.value)
+            setMessageError(inputCheck(target.name, target.value))
+        }
+    }
+    const handleFocusOut = ({ target }) => {
+        if (target.name === "name") {
+            setNameError(inputCheck(target.name, target.value))
+        }
+        if (target.name === "email") {
+            setEmailError(inputCheck(target.name, target.value))
+        }
+        if (target.name === "message") {
+            setMessageError(inputCheck(target.name, target.value))
+        }
     }
 
     return (
         <div className="w-full flex flex-col pt-10 md:py-0 md:px-[2rem]">
             <div className="w-full m-auto flex flex-col md:flex-row md:inline-flex md:justify-between pb-16">
-                <div className="w-full md:w-[45%] relative pb-10 md:pb-0">
-                    <input id="name" name="name" type="text" className={`w-full text-xl border-b ${name ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`} value={name} onChange={handleChange} />
+                <div className="w-full md:w-[45%] relative">
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        className={`w-full text-xl border-b ${name ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
+                        value={name}
+                        onChange={handleChange}
+                        onBlur={handleFocusOut}
+                    />
                     <label htmlFor="name" className={`absolute left-0 cursor-text ${name ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Name</label>
+                    <div className="h-[2.5rem]">
+                        {
+                            nameError && <Error text={nameError} type={"warning"} />
+                        }
+                    </div>
                 </div>
                 <div className="md:w-[45%] relative">
-                    <input id="email" name="email" type="email" className={`w-full text-xl border-b ${email ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`} value={email} onChange={handleChange} />
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        className={`w-full text-xl border-b ${email ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
+                        value={email}
+                        onChange={handleChange}
+                        onBlur={handleFocusOut}
+                    />
                     <label htmlFor="email" className={`absolute left-0 cursor-text ${email ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Email</label>
+                    <div className="h-[2.5rem]">
+                        {
+                            emailError && <Error text={emailError} type={"fail"} />
+                        }
+                    </div>
                 </div>
             </div>
-            <div className="w-full m-auto relative pb-16">
-                <textarea id="message" name="message" type="textarea" className={`w-full h-fit text-xl border-b ${message ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`} value={message} onChange={handleChange} />
+            <div className="w-full m-auto relative">
+                <textarea
+                    id="message"
+                    name="message"
+                    type="textarea"
+                    className={`w-full h-fit text-xl border-b ${message ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
+                    value={message}
+                    onChange={handleChange}
+                    onBlur={handleFocusOut}
+                />
                 <label htmlFor="message" className={`absolute left-0 cursor-text ${message ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Message</label>
+                <div className="h-[4rem]">
+                    {
+                        messageError && <Error text={messageError} type={"fail"} />
+                    }
+                </div>
             </div>
             <div className="flex justify-center">
                 <Button icon={<GoArrowRight />} title={"Send"} />
