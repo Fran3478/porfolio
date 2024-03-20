@@ -1,9 +1,11 @@
-import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
-import { LuFileDown } from "react-icons/lu";
+import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser, AiOutlineFilePdf } from 'react-icons/ai'
 import NavbarButton from '../buttons/NavbarButton';
-import resume from "/porfolio/pdf/resume_en.pdf"
+import { useLanguage } from "../../hooks/useLanguage"
+import pdf_en from "../../assets/pdf/resume_en.pdf"
+import pdf_es from "../../assets/pdf/resume_es.pdf"
 
 const SideNavbar = () => {
+    const { ln } = useLanguage()
     const buttons = [
         {
             url: "#home",
@@ -26,11 +28,11 @@ const SideNavbar = () => {
             icon: <AiOutlineMail />
         },
         {
-            url: resume,
+            url: ln === "en" ? pdf_en : ln === "es" && pdf_es,
             downloadable: true,
             name: "Resume-Francisco Hernandez.pdf",
             title: "Resume",
-            icon: <LuFileDown />
+            icon: <AiOutlineFilePdf />
         }
     ]
     return (

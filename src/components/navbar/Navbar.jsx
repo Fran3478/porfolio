@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import SideNavbar from "./SideNavBar"
+import SideNavbar from "./SideNavbar"
 import HamburgerMenu from "./HamburgerMenu"
 
 const Navbar = () => {
