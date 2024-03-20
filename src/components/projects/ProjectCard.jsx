@@ -3,7 +3,7 @@ import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import Status from "./Status";
 import ProjectButton from "../buttons/ProjectButton";
 
-const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status = "working on" }) => {
+const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) => {
 
     return (
         <div className="text-white max-w-[30rem] col-span-3 lg:col-span-4 bg-[#155561] rounded-b-lg pb-6 shadow-xl shadow-[#155661d2]">
@@ -27,7 +27,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string,
     deploy: PropTypes.string,
     repo: PropTypes.string,
-    status: PropTypes.string
+    status: PropTypes.object
 }
 
 export default ProjectCard

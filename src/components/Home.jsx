@@ -1,3 +1,4 @@
+
 const Home = () => {
   return (
     <div id='home' className="bg-[#062446] flex max-w-screen min-h-screen max-h-fit h-screen flex-col md:flex-row overflow-hidden">
