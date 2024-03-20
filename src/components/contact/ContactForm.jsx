@@ -4,6 +4,7 @@ import ContactButton from "../buttons/ContactButton"
 import Error from "../error/Error"
 import { AiOutlineSend } from "react-icons/ai"
 import { inputCheck, bulkCheck } from "../../assets/validator"
+import { useLanguage } from "../../hooks/useLanguage"
 
 const ContactForm = () => {
     const [name, setName] = useState('')
@@ -13,16 +14,13 @@ const ContactForm = () => {
     const [emailError, setEmailError] = useState("")
     const [messageError, setMessageError] = useState("")
 
+    const { translation } = useLanguage()
+
     const checkErrors = ({ name, value }) => {
-        if (name === "name") {
-            setNameError(inputCheck(name, value))
-        }
-        if (name === "email") {
-            setEmailError(inputCheck(name, value))
-        }
-        if (name === "message") {
-            setMessageError(inputCheck(name, value))
-        }
+        const error = inputCheck(name, value)
+        if (name === "name") setNameError(error === "not_found" ? translation.error.name : "")
+        if (name === "email") setEmailError(error ? translation.error.email[error] : "")
+        if (name === "message") setMessageError(error === "not_found" ? translation.error.message : "")
     }
     const handleChange = ({ target }) => {
         const name = target.name
@@ -86,7 +84,7 @@ const ContactForm = () => {
                         onChange={handleChange}
                         onBlur={handleFocusOut}
                     />
-                    <label htmlFor="name" className={`absolute left-0 cursor-text ${name ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Name</label>
+                    <label htmlFor="name" className={`absolute left-0 cursor-text ${name ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>{translation.contact.form.name}</label>
                     <div className="h-[2.5rem]">
                         {
                             nameError && <Error text={nameError} type={"warning"} />
@@ -121,7 +119,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onBlur={handleFocusOut}
                 />
-                <label htmlFor="message" className={`absolute left-0 cursor-text ${message ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Message</label>
+                <label htmlFor="message" className={`absolute left-0 cursor-text ${message ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>{translation.contact.form.message}</label>
                 <div className="h-[4rem]">
                     {
                         messageError && <Error text={messageError} type={"fail"} />
@@ -129,7 +127,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <ContactButton icon={<AiOutlineSend />} title={"Send"} onClick={handleClick} />
+                <ContactButton icon={<AiOutlineSend />} title={translation.contact.send_button} onClick={handleClick} />
             </div>
         </div>
     )
