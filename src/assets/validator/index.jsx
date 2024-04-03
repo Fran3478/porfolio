@@ -1,9 +1,21 @@
-const inputCheck = (input, type) => {
-    const validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
-    if (!input) return "Oops, the field cannot be left empty"
-    if (type === "email") {
-        if (!validEmail.test(input)) return "Oops, the email doesn't seem to be a valid one"
+const validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
+const inputCheck = (field, value) => {
+    if (!value) return "not_found"
+    if (field === "email") {
+        if (!validEmail.test(value)) return "invalid"
     }
+    return ""
+}
+const bulkCheck = (fields) => {
+    let checkPass = true
+    fields.forEach(e => {
+        let error = inputCheck(e.field, e.value)
+        if (error) {
+            e.error({name:e.field, error})
+            e.field !== "name" && (checkPass = false)
+        }
+    })
+    return checkPass
 }
 
-export default inputCheck
+export { inputCheck, bulkCheck }

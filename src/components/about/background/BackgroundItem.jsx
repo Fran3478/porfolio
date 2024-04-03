@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
+import { useLanguage } from "../../../hooks/useLanguage"
 
 const BackgroundItem = ({ title, dates, description, id, show, handleShow }) => {
+    const { translation } = useLanguage()
 
     return (
         <ol className="flex flex-col md:flex-row relative border-l border-[#416B9A]">
@@ -15,12 +17,12 @@ const BackgroundItem = ({ title, dates, description, id, show, handleShow }) => 
                         show !== id ?
                             <>
                                 <p className="my-2 text-sm lg:text-base font-normal text-[#062446] line-clamp-1 sm:line-clamp-2 lg:line-clamp-none">{description.split(' ').slice(0, 30).join(' ') + '...'}</p>
-                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { handleShow(id) })}>Show more...</p>
+                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { handleShow(id) })}>{translation.about.background_section.button_more}</p>
                             </>
                             :
                             <>
                                 <p className="my-2 text-sm lg:text-base font-normal text-[#062446]">{description}</p>
-                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { handleShow(0) })}>Show less...</p>
+                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { handleShow(0) })}>{translation.about.background_section.button_less}</p>
                             </>
                     }
                 </div>

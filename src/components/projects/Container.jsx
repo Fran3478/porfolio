@@ -1,12 +1,13 @@
+import { useLanguage } from "../../hooks/useLanguage"
 import ProjectCard from "./ProjectCard"
-import data from "../../assets/data/data.json"
 
 const Container = () => {
+    const { translation } = useLanguage()
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-10 m-auto">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-10">
             {
-                data.projectData.map((item) => (
+                translation.project.projects_section.map((item) => (
                     <ProjectCard
                         key={item.id}
                         title={item.title}
