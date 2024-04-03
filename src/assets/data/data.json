@@ -172,7 +172,7 @@
                     "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/oxmundsmjljxhhqu4pau.webp",
                     "alt": "sinergia-coworking",
                     "description": "Final team project of the bootcamp, the page aims to address the needs of professionals and companies looking to visualize, book, and pay for flexible and convenient workspaces, such as offices, meeting rooms, or open spaces.",
-                    "deploy": "",
+                    "deploy": "https://develop--sinergia-cowork.netlify.app/",
                     "repo": "https://github.com/Fran3478/SinergiaCoworking",
                     "status": {
                         "title": "finished",
@@ -185,7 +185,7 @@
                     "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/bgzcnkoau322ga3d6etr.webp",
                     "alt": "personal-porfolio",
                     "description": "Project aimed at presenting clearly and concisely some of my skills, experience, and relevant projects in my professional field, as well as establishing a positive and memorable impression among potential employers, collaborators, and clients.",
-                    "deploy": "https://fran3478.github.io/porfolio/",
+                    "deploy": "https://francisco-hernandez.netlify.app/",
                     "repo": "https://github.com/Fran3478/porfolio",
                     "status": {
                         "title": "on development",
@@ -198,8 +198,8 @@
                     "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/flk7ktdfxdvycluzgxiy.webp",
                     "alt": "dearq",
                     "description": "Page designed upon request for an architecture studio specialized in interior design focused on emotions and mental well-being. The goal is to attract a larger clientele by having a more professional impact.",
-                    "deploy": "",
-                    "repo": "",
+                    "deploy": "https://dearq.netlify.app",
+                    "repo": "https://github.com/Fran3478/dearq-web",
                     "status": {
                         "title": "on development",
                         "control": "on development"
@@ -228,7 +228,11 @@
                 "not_found": "An email is required for me to respond",
                 "invalid": "Oops, it seems the email provided is not valid"
             },
-            "message": "Oops, you forgot to fill in the message field"
+            "message": "Oops, you forgot to fill in the message field",
+            "send": {
+                "ok": "Your message has been sent. I will respond as soon as possible",
+                "bad": "There was a problem sending your message. Please try again"
+            }
         }
     },
     "es": {
@@ -404,7 +408,7 @@
                     "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/oxmundsmjljxhhqu4pau.webp",
                     "alt": "sinergia-coworking",
                     "description": "Proyecto final en equipo del bootcamp, la pagina tiene el objetivo de abordar las necesidades de profesionales y empresas que buscan visualizar, reservar y pagar por espacios de trabajo flexibles y convenientes, como oficinas, salas de reuniones o espacios abiertos.",
-                    "deploy": "",
+                    "deploy": "https://develop--sinergia-cowork.netlify.app/",
                     "repo": "https://github.com/Fran3478/SinergiaCoworking",
                     "status": {
                         "title": "finalizado",
@@ -417,7 +421,7 @@
                     "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/bgzcnkoau322ga3d6etr.webp",
                     "alt": "personal-porfolio",
                     "description": "Proyecto para presentar de manera clara y concisa alguna de mis habilidades, experiencia y proyectos relevantes en mi campo profesional, así como para establecer una impresión positiva y memorable entre potenciales empleadores, colaboradores y clientes.",
-                    "deploy": "https://fran3478.github.io/porfolio/",
+                    "deploy": "https://francisco-hernandez.netlify.app/",
                     "repo": "https://github.com/Fran3478/porfolio",
                     "status": {
                         "title": "en desarrollo",
@@ -430,8 +434,8 @@
                     "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/flk7ktdfxdvycluzgxiy.webp",
                     "alt": "dearq",
                     "description": "Pagina diseñada a pedido, para estudio de arquitectura especializado en el diseño de interiores enfocados en las emociones y bien estar mental. El objetivo es captar mayor clientela teniendo un impacto mas profesional.",
-                    "deploy": "",
-                    "repo": "",
+                    "deploy": "https://dearq.netlify.app",
+                    "repo": "https://github.com/Fran3478/dearq-web",
                     "status": {
                         "title": "en desarrollo",
                         "control": "on development"
@@ -457,7 +461,11 @@
                 "not_found": "Se requiere un correo electrónico para que pueda responder",
                 "invalid": "Ups, parece que el correo electrónico proporcionado no es válido"
             },
-            "message": "Ups, olvidaste completar el campo del mensaje"
+            "message": "Ups, olvidaste completar el campo del mensaje",
+            "send": {
+                "ok": "Tu mensaje ha sido enviado. Responderé tan pronto como sea posible",
+                "bad": "Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo"
+            }
         }
     }
 }
