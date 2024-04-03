@@ -15,7 +15,7 @@ const bulkCheck = (fields) => {
     fields.forEach(e => {
         let error = inputCheck(e.field, e.value)
         if (error) {
-            e.error(error)
+            e.error({name:e.field, error})
             e.field !== "name" && (checkPass = false)
         }
     })
