@@ -7,7 +7,7 @@ const ContactLink = ({ title, url = '#', icon }) => {
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-[150%] bg-[#1ab0ba] group-hover:translate-x-0 ease text-3xl">
                 <svg className="h-7 w-7">{icon}</svg>
             </span>
-            <span className="relative flex items-center justify-center w-full h-full text-[#1ab0ba] transition-all duration-300 transform group-hover:translate-x-full ease px-[5rem] text-lg md:text-2xl">{title}</span>
+            <span className="relative flex items-center justify-center w-full h-full text-[#1ab0ba] transition-all duration-300 transform group-hover:translate-x-full ease px-[3rem] sm:px-[5rem] text-lg md:text-2xl">{title}</span>
 
         </a>
     )
