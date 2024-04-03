@@ -24,8 +24,6 @@ const ContactForm = () => {
         if (name === "message") setMessageError(error === "not_found" ? translation.error.message : "")
     }
 
-    const { translation } = useLanguage()
-
     const checkErrors = ({ name, value }) => {
         const error = inputCheck(name, value)
         defineError({name, error})
