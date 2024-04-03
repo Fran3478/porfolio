@@ -1,154 +1,463 @@
 {
-    "knowledge": [
-        {
-            "id": 1,
-            "title": "Higher Technician in Software Development",
-            "dates": [
-                "02/2020",
-                "11/2023"
-            ],
-            "description": "I completed my Higher Technician career at the San Jose Higher Institute, where I acquired knowledge not only about programming but also about several methodologies, strategies, and different approaches when solving specific problems."
+    "en": {
+        "about": {
+            "title": "About",
+            "me_section": {
+                "title": "Me",
+                "intro": "Hello! I'm Fran, a junior full stack web developer. I delved into the world of programming for the first time out of curiosity stemming from my hobby of fixing computers. When I discovered the incredible possibilities that programming offers, I loved it so much that I decided to take it to the next level and make programming a part of my life. Aside from coding, in my free time, I enjoy playing video games, reading novels, watching movies and series, and most importantly, spending time with my pets (a dog and 2 kittens)."
+            },
+            "background_section": {
+                "title": "Backgound",
+                "knowledge": [
+                    {
+                        "id": 1,
+                        "title": "Higher Technician in Software Development",
+                        "dates": [
+                            "02/2020",
+                            "11/2023"
+                        ],
+                        "description": "I completed my Higher Technician career at the San Jose Higher Institute, where I acquired knowledge not only about programming but also about several methodologies, strategies, and different approaches when solving specific problems."
+                    },
+                    {
+                        "id": 2,
+                        "title": "Full Stack Developer",
+                        "dates": [
+                            "05/2023",
+                            "10/2023"
+                        ],
+                        "description": "I trained as a full stack web developer at Henry's bootcamp, completing over 800 hours of coursework. There, I learned tools and programming languages such as JavaScript, HTML, CSS, PostgreSQL, among others, as well as understanding the importance of fluid and effective communication while working in groups composed of people from different nationalities."
+                    }
+                ],
+                "button_more": "Show more...",
+                "button_less": "Show less..."
+            },
+            "techSkill_section": {
+                "title": "Tech Skills",
+                "skills": [
+                    {
+                        "id": 1,
+                        "title": "React.js",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/gg1ugmjzq1jm9zybrnrm.svg",
+                        "alt": "react-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Vite",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/kd2dw4mdgqpcnvdixbzp.svg",
+                        "alt": "vite-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Redux",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/nd2id4awjysrxlx1bhfw.svg",
+                        "alt": "redux-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Tailwind",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/z1mqkftk1bnc2atmwtkw.svg",
+                        "alt": "tailwind-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 5,
+                        "title": "JavaScript",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/mbxpp5tqmtoobuaphjpv.svg",
+                        "alt": "javascript-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 6,
+                        "title": "HTML",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/ramnfdwqmdiwaiw1twz2.svg",
+                        "alt": "html-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 7,
+                        "title": "CSS",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740046/portfolio-img/svgs/bkalcdxfmdhovakb5mcz.svg",
+                        "alt": "css-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 8,
+                        "title": "Node.js",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/whwzs7ihrw9mclkuj4qu.svg",
+                        "alt": "node-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 9,
+                        "title": "Express.js",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740047/portfolio-img/svgs/iwlubzh7it5d3mzwodu4.svg",
+                        "alt": "express-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 12,
+                        "title": "PostgreSQL",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/vyos170lyhynxynclz3t.svg",
+                        "alt": "postgreSQL-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 13,
+                        "title": "Git",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/jebbkdjd1hkz43fiwgpu.svg",
+                        "alt": "git-logo",
+                        "cat": "others"
+                    },
+                    {
+                        "id": 14,
+                        "title": "GitHub",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/ghrcpq6ds7syv5eiaegr.svg",
+                        "alt": "gitHub-logo",
+                        "cat": "others"
+                    },
+                    {
+                        "id": 15,
+                        "title": "Cloudinary",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740046/portfolio-img/svgs/lmqbjz52pftvejxkhjzd.svg",
+                        "alt": "cloudinary-logo",
+                        "cat": "others"
+                    },
+                    {
+                        "id": 16,
+                        "title": "Axios",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740045/portfolio-img/svgs/nmytnoye5fulgy08g6li.svg",
+                        "alt": "axios-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 17,
+                        "title": "Sequelize",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/lpmqkhqf0cpopl8nbr69.svg",
+                        "alt": "sequelize-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 18,
+                        "title": "VS Code",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/netlbvjwzm1sbxwm1buu.svg",
+                        "alt": "vscode-logo",
+                        "cat": "others"
+                    }
+                ],
+                "categories": [
+                    {
+                        "title": "Frontend",
+                        "cat": "front"
+                    },
+                    {
+                        "title": "Backend",
+                        "cat": "back"
+                    },
+                    {
+                        "title": "Others",
+                        "cat": "others"
+                    }
+                ]
+            }
         },
-        {
-            "id": 2,
-            "title": "Full Stack Web Developer",
-            "dates": [
-                "05/2023",
-                "10/2023"
-            ],
-            "description": "I trained as a full stack web developer at Henry's bootcamp, completing over 800 hours of coursework. There, I learned tools and programming languages such as JavaScript, HTML, CSS, PostgreSQL, among others, as well as understanding the importance of fluid and effective communication while working in groups composed of people from different nationalities."
+        "project": {
+            "title": "Projects",
+            "projects_section": [
+                {
+                    "id": 1,
+                    "title": "Sinergia Coworking",
+                    "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/oxmundsmjljxhhqu4pau.webp",
+                    "alt": "sinergia-coworking",
+                    "description": "Final team project of the bootcamp, the page aims to address the needs of professionals and companies looking to visualize, book, and pay for flexible and convenient workspaces, such as offices, meeting rooms, or open spaces.",
+                    "deploy": "",
+                    "repo": "https://github.com/Fran3478/SinergiaCoworking",
+                    "status": {
+                        "title": "finished",
+                        "control": "finished"
+                    }
+                },
+                {
+                    "id": 2,
+                    "title": "Personal Porfolio",
+                    "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/bgzcnkoau322ga3d6etr.webp",
+                    "alt": "personal-porfolio",
+                    "description": "Project aimed at presenting clearly and concisely some of my skills, experience, and relevant projects in my professional field, as well as establishing a positive and memorable impression among potential employers, collaborators, and clients.",
+                    "deploy": "https://fran3478.github.io/porfolio/",
+                    "repo": "https://github.com/Fran3478/porfolio",
+                    "status": {
+                        "title": "on development",
+                        "control": "on development"
+                    }
+                },
+                {
+                    "id": 3,
+                    "title": "DEArq",
+                    "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/flk7ktdfxdvycluzgxiy.webp",
+                    "alt": "dearq",
+                    "description": "Page designed upon request for an architecture studio specialized in interior design focused on emotions and mental well-being. The goal is to attract a larger clientele by having a more professional impact.",
+                    "deploy": "",
+                    "repo": "",
+                    "status": {
+                        "title": "on development",
+                        "control": "on development"
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "title": "Send me a message!",
+            "subtitle": "Got a question or a proposal, or just want to chat about something?",
+            "contact_button": "Contact me!",
+            "send_button": "Send",
+            "info": "Click the above button to open your email app or just fill the form",
+            "form": {
+                "name": "Name",
+                "email": {
+                    "title": "Email",
+                    "subject": "Hi Francisco!"
+                },
+                "message": "Message"
+            }
+        },
+        "error": {
+            "name": "No name provided",
+            "email": {
+                "not_found": "An email is required for me to respond",
+                "invalid": "Oops, it seems the email provided is not valid"
+            },
+            "message": "Oops, you forgot to fill in the message field"
         }
-    ],
-    "techSkill": [
-        {
-            "id": 1,
-            "title": "React.js",
-            "svg": "/porfolio/svg/react-logo.svg",
-            "alt": "react-logo",
-            "cat": "front"
+    },
+    "es": {
+        "about": {
+            "title": "Acerca",
+            "me_section": {
+                "title": "Yo",
+                "intro": "¡Hola! Soy Fran, un desarrollador full stack junior. Me adentré en el mundo de la programación por primera vez por curiosidad surgida de mi pasatiempo de arreglar computadoras. Cuando descubrí las increíbles posibilidades que ofrece la programación, me encantó tanto que decidí llevarlo al siguiente nivel y hacer que la programación fuera parte de mi vida. Aparte de codificar, en mi tiempo libre disfruto jugando videojuegos, leyendo novelas, viendo películas y series, y lo más importante, pasando tiempo con mis mascotas (un perro y 2 gatitos)."
+            },
+            "background_section": {
+                "title": "Educación",
+                "knowledge": [
+                    {
+                        "id": 1,
+                        "title": "Tecnicatura Superior en Desarrollo de Software",
+                        "dates": [
+                            "02/2020",
+                            "11/2023"
+                        ],
+                        "description": "Completé mi carrera de Técnico Superior en el Instituto Superior San José, donde adquirí conocimientos no solo sobre programación, sino también sobre varias metodologías, estrategias y enfoques diferentes para resolver problemas específicos."
+                    },
+                    {
+                        "id": 2,
+                        "title": "Full Stack Developer",
+                        "dates": [
+                            "05/2023",
+                            "10/2023"
+                        ],
+                        "description": "Me formé como full stack developer en el bootcamp de Henry, completando más de 800 horas de curso. Allí, aprendí herramientas y lenguajes de programación como JavaScript, HTML, CSS, PostgreSQL, entre otros, así como también comprendí la importancia de una comunicación fluida y efectiva mientras trabajaba en grupos compuestos por personas de diferentes nacionalidades."
+                    }
+                ],
+                "button_more": "Mostrar más...",
+                "button_less": "Mostrar menos..."
+            },
+            "techSkill_section": {
+                "title": "Skills Técnicas",
+                "skills": [
+                    {
+                        "id": 1,
+                        "title": "React.js",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/gg1ugmjzq1jm9zybrnrm.svg",
+                        "alt": "react-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Vite",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/kd2dw4mdgqpcnvdixbzp.svg",
+                        "alt": "vite-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Redux",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/nd2id4awjysrxlx1bhfw.svg",
+                        "alt": "redux-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Tailwind",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/z1mqkftk1bnc2atmwtkw.svg",
+                        "alt": "tailwind-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 5,
+                        "title": "JavaScript",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/mbxpp5tqmtoobuaphjpv.svg",
+                        "alt": "javascript-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 6,
+                        "title": "HTML",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/ramnfdwqmdiwaiw1twz2.svg",
+                        "alt": "html-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 7,
+                        "title": "CSS",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740046/portfolio-img/svgs/bkalcdxfmdhovakb5mcz.svg",
+                        "alt": "css-logo",
+                        "cat": "front"
+                    },
+                    {
+                        "id": 8,
+                        "title": "Node.js",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/whwzs7ihrw9mclkuj4qu.svg",
+                        "alt": "node-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 9,
+                        "title": "Express.js",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740047/portfolio-img/svgs/iwlubzh7it5d3mzwodu4.svg",
+                        "alt": "express-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 12,
+                        "title": "PostgreSQL",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740043/portfolio-img/svgs/vyos170lyhynxynclz3t.svg",
+                        "alt": "postgreSQL-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 13,
+                        "title": "Git",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/jebbkdjd1hkz43fiwgpu.svg",
+                        "alt": "git-logo",
+                        "cat": "others"
+                    },
+                    {
+                        "id": 14,
+                        "title": "GitHub",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740042/portfolio-img/svgs/ghrcpq6ds7syv5eiaegr.svg",
+                        "alt": "gitHub-logo",
+                        "cat": "others"
+                    },
+                    {
+                        "id": 15,
+                        "title": "Cloudinary",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740046/portfolio-img/svgs/lmqbjz52pftvejxkhjzd.svg",
+                        "alt": "cloudinary-logo",
+                        "cat": "others"
+                    },
+                    {
+                        "id": 16,
+                        "title": "Axios",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740045/portfolio-img/svgs/nmytnoye5fulgy08g6li.svg",
+                        "alt": "axios-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 17,
+                        "title": "Sequelize",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/lpmqkhqf0cpopl8nbr69.svg",
+                        "alt": "sequelize-logo",
+                        "cat": "back"
+                    },
+                    {
+                        "id": 18,
+                        "title": "VS Code",
+                        "svg": "https://res.cloudinary.com/dacbde3so/image/upload/v1710740044/portfolio-img/svgs/netlbvjwzm1sbxwm1buu.svg",
+                        "alt": "vscode-logo",
+                        "cat": "others"
+                    }
+                ],
+                "categories": [
+                    {
+                        "title": "Frontend",
+                        "cat": "front"
+                    },
+                    {
+                        "title": "Backend",
+                        "cat": "back"
+                    },
+                    {
+                        "title": "Otros",
+                        "cat": "others"
+                    }
+                ]
+            }
         },
-        {
-            "id": 2,
-            "title": "Vite",
-            "svg": "/porfolio/svg/vite-logo.svg",
-            "alt": "vite-logo",
-            "cat": "front"
+        "project": {
+            "title": "Proyectos",
+            "projects_section": [
+                {
+                    "id": 1,
+                    "title": "Sinergia Coworking",
+                    "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/oxmundsmjljxhhqu4pau.webp",
+                    "alt": "sinergia-coworking",
+                    "description": "Proyecto final en equipo del bootcamp, la pagina tiene el objetivo de abordar las necesidades de profesionales y empresas que buscan visualizar, reservar y pagar por espacios de trabajo flexibles y convenientes, como oficinas, salas de reuniones o espacios abiertos.",
+                    "deploy": "",
+                    "repo": "https://github.com/Fran3478/SinergiaCoworking",
+                    "status": {
+                        "title": "finalizado",
+                        "control": "finished"
+                    }
+                },
+                {
+                    "id": 2,
+                    "title": "Porfolio Personal",
+                    "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/bgzcnkoau322ga3d6etr.webp",
+                    "alt": "personal-porfolio",
+                    "description": "Proyecto para presentar de manera clara y concisa alguna de mis habilidades, experiencia y proyectos relevantes en mi campo profesional, así como para establecer una impresión positiva y memorable entre potenciales empleadores, colaboradores y clientes.",
+                    "deploy": "https://fran3478.github.io/porfolio/",
+                    "repo": "https://github.com/Fran3478/porfolio",
+                    "status": {
+                        "title": "en desarrollo",
+                        "control": "on development"
+                    }
+                },
+                {
+                    "id": 3,
+                    "title": "DEArq",
+                    "img": "https://res.cloudinary.com/dacbde3so/image/upload/v1710893160/portfolio-img/projects/flk7ktdfxdvycluzgxiy.webp",
+                    "alt": "dearq",
+                    "description": "Pagina diseñada a pedido, para estudio de arquitectura especializado en el diseño de interiores enfocados en las emociones y bien estar mental. El objetivo es captar mayor clientela teniendo un impacto mas profesional.",
+                    "deploy": "",
+                    "repo": "",
+                    "status": {
+                        "title": "en desarrollo",
+                        "control": "on development"
+                    }
+                }
+            ]
         },
-        {
-            "id": 3,
-            "title": "Redux",
-            "svg": "/porfolio/svg/redux-logo.svg",
-            "alt": "redux-logo",
-            "cat": "front"
+        "contact": {
+            "title": "¡Envíame un mensaje!",
+            "subtitle": "¿Tenes alguna pregunta o propuesta, o simplemente quieres charlar sobre algo?",
+            "contact_button": "Contactame!",
+            "send_button": "Enviar",
+            "info": "Haz clic en el botón anterior para abrir tu aplicación de correo electrónico o simplemente completa el formulario",
+            "form": {
+                "name": "Nombre",
+                "email": "Email",
+                "message": "Mensaje"
+            }
         },
-        {
-            "id": 4,
-            "title": "Tailwind",
-            "svg": "/porfolio/svg/tailwindcss-logo.svg",
-            "alt": "tailwind-logo",
-            "cat": "front"
-        },
-        {
-            "id": 5,
-            "title": "JavaScript",
-            "svg": "/porfolio/svg/javascript-logo.svg",
-            "alt": "javascript-logo",
-            "cat": "front"
-        },
-        {
-            "id": 6,
-            "title": "HTML",
-            "svg": "/porfolio/svg/html-logo.svg",
-            "alt": "html-logo",
-            "cat": "front"
-        },
-        {
-            "id": 7,
-            "title": "CSS",
-            "svg": "/porfolio/svg/css-logo.svg",
-            "alt": "css-logo",
-            "cat": "front"
-        },
-        {
-            "id": 8,
-            "title": "Node.js",
-            "svg": "/porfolio/svg/node-logo.svg",
-            "alt": "node-logo",
-            "cat": "back"
-        },
-        {
-            "id": 9,
-            "title": "Express.js",
-            "svg": "/porfolio/svg/express-logo.svg",
-            "alt": "express-logo",
-            "cat": "back"
-        },
-        {
-            "id": 12,
-            "title": "PostgreSQL",
-            "svg": "/porfolio/svg/postgreslq-logo.svg",
-            "alt": "postgreSQL-logo",
-            "cat": "back"
-        },
-        {
-            "id": 13,
-            "title": "Git",
-            "svg": "/porfolio/svg/git-logo.svg",
-            "alt": "git-logo",
-            "cat": "version-control"
-        },
-        {
-            "id": 14,
-            "title": "GitHub",
-            "svg": "/porfolio/svg/github-logo.svg",
-            "alt": "gitHub-logo",
-            "cat": "version-control"
+        "error": {
+            "name": "No se proporcionó ningún nombre",
+            "email": {
+                "not_found": "Se requiere un correo electrónico para que pueda responder",
+                "invalid": "Ups, parece que el correo electrónico proporcionado no es válido"
+            },
+            "message": "Ups, olvidaste completar el campo del mensaje"
         }
-    ],
-    "techCat": [
-        {
-            "title": "Front",
-            "cat": "front"
-        },
-        {
-            "title": "Back",
-            "cat": "back"
-        },
-        {
-            "title": "Version Control",
-            "cat": "version-control"
-        }
-    ],
-    "projectData": [
-        {
-            "id": 1,
-            "title": "Sinergia Coworking",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg",
-            "alt": "sinergia-coworking",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
-            "deploy": "",
-            "repo": "https://github.com/Fran3478/SinergiaCoworking",
-            "status": "finished"
-        },
-        {
-            "id": 2,
-            "title": "Personal Porfolio",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg",
-            "alt": "personal-porfolio",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
-            "deploy": "https://fran3478.github.io/porfolio/",
-            "repo": "https://github.com/Fran3478/porfolio",
-            "status": "working on"
-        },
-        {
-            "id": 3,
-            "title": "DEArq",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg",
-            "alt": "dearq",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quisquam culpa nihil qui quasi, veritatis nobis, porro maiores impedit magni temporibus iste debitis dolores esse repellat accusamus a error id.",
-            "deploy": "",
-            "repo": "",
-            "status": "wprking on"
-        }
-    ]
+    }
 }

@@ -1,5 +1,4 @@
-import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser } from 'react-icons/ai'
-import { LuFileDown } from "react-icons/lu";
+import { AiOutlineHome, AiOutlineProject, AiOutlineMail, AiOutlineUser, AiOutlineDownload } from 'react-icons/ai'
 import PropTypes from "prop-types"
 
 const HamburgerMenu = ({ handleNav }) => {
@@ -22,7 +21,7 @@ const HamburgerMenu = ({ handleNav }) => {
                 <span className='pl-4'>Contact</span>
             </a>
             <a href='#resume' className='w-[70%] sm:w-80 flex justify-center items-center rounded-full shadow-md shadow-slate-600 bg-[#51A6F0] text-white m-2 p-4 cursor-pointer active:scale-110 ease-in duration-200' onClick={handleNav}>
-                <LuFileDown size={20} />
+                <AiOutlineDownload size={20} />
                 <span className='pl-4'>Resume</span>
             </a>
         </div>

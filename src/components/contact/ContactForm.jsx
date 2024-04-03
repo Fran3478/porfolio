@@ -24,6 +24,8 @@ const ContactForm = () => {
         if (name === "message") setMessageError(error === "not_found" ? translation.error.message : "")
     }
 
+    const { translation } = useLanguage()
+
     const checkErrors = ({ name, value }) => {
         const error = inputCheck(name, value)
         defineError({name, error})
@@ -66,6 +68,7 @@ const ContactForm = () => {
             }
         ]
         const passCheck = bulkCheck(fields)
+        const text = `New contact!%0AName: ${name || "not provided"}%0AEmail: ${email}%0AMessage: ${message}`
         if (passCheck) {
             setSendStatus("loading")
             axios.get(`https://api.telegram.org/bot${import.meta.env.VITE_BOT_TOKEN}/sendMessage?chat_id=${import.meta.env.VITE_CHAT_ID}&text=${text}&parse_mode`)
@@ -104,7 +107,7 @@ const ContactForm = () => {
                         onChange={handleChange}
                         onBlur={handleFocusOut}
                     />
-                    <label htmlFor="name" className={`absolute left-0 cursor-text ${name ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Name</label>
+                    <label htmlFor="name" className={`absolute left-0 cursor-text ${name ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>{translation.contact.form.name}</label>
                     <div className="h-[2.5rem]">
                         {
                             nameError && <Error text={nameError} type={"warning"} />
@@ -139,7 +142,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     onBlur={handleFocusOut}
                 />
-                <label htmlFor="message" className={`absolute left-0 cursor-text ${message ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>Message</label>
+                <label htmlFor="message" className={`absolute left-0 cursor-text ${message ? "text-xs -top-4 peer-focus:text-[#1ab0ba]" : "top-1 text-gray-500 text-lg peer-focus:text-xs peer-focus:-top-4 peer-focus:text-[#1ab0ba]"} transition-all duration-300`}>{translation.contact.form.message}</label>
                 <div className="h-[4rem]">
                     {
                         messageError && <Error text={messageError} type={"fail"} />
@@ -147,7 +150,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <ContactButton icon={<AiOutlineSend />} title={"Send"} onClick={handleClick} />
+                <ContactButton icon={<AiOutlineSend />} title={translation.contact.send_button} onClick={handleClick} />
             </div>
             {
                 sendStatus && <Loading status={sendStatus} handleClick={handleStatus} />

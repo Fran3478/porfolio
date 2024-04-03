@@ -1,20 +1,22 @@
-import Navbar from './components/navBar/NavBar'
+import Navbar from './components/navbar/Navbar'
 import Home from './components/Home'
 import AboutMe from './components/about/AboutMe'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
+import { LanguageProvider } from './context/language'
+
 
 function App() {
 
   return (
     <>
-      <div>
+      <LanguageProvider>
         <Navbar />
         <Home />
         <AboutMe />
         <Projects />
         <Contact />
-      </div>
+      </LanguageProvider>
     </>
   )
 }
