@@ -59,7 +59,7 @@ const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) 
                 }}
             >
                 <div 
-                    className="flex flex-col justify-center text-center overflow-hidden mt-[1rem] mx-[1rem] bg-[#8ac3f5] bg-opacity-70 rounded-md p-2"
+                    className="flex flex-col justify-center text-center overflow-hidden mt-[1rem] mx-[1rem] bg-white/20 rounded-md p-2"
                     style={{
                         transform: "translateZ(75px)"
                     }}
