@@ -6,16 +6,29 @@ import ProjectButton from "../buttons/ProjectButton";
 const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) => {
 
     return (
-        <div className="text-white max-w-[30rem] col-span-3 lg:col-span-4 bg-[#155561] rounded-b-lg pb-6 shadow-md shadow-[#155661d2]">
-            <div className="flex flex-col justify-center text-center overflow-hidden">
-                <img className="min-w-[100%] min-h-[100%] max-w-[25rem] object-cover" src={urlImg} alt={alt} />
+        <div className="text-white max-w-[28rem] col-span-1 2ml:col-span-6 15xl:col-span-4 bg-[#155561] rounded-xl shadow-md shadow-[#155661d2]">
+            <div className="flex flex-col justify-center text-center overflow-hidden mt-[1rem] mx-[1rem]">
+                <img className="min-w-[100%] min-h-[100%] w-[25rem] object-cover rounded-md" src={urlImg} alt={alt} />
                 <Status status={status} />
                 <p className="font-bold text-base md:text-2xl text-white">{title}</p>
             </div>
-            <p className="p-[1.7rem] hidden lg:block tracking-tight leading-tight">{description}</p>
-            <div className="pt-5 lg:p-0 flex justify-around">
-                <ProjectButton url={repo} ico={<AiOutlineGithub />} />
-                <ProjectButton url={deploy} ico={<AiOutlineLink />} />
+            <div className="block">
+                <div className="mt-[1rem] mx-[1.7rem] 2ml:h-[9rem] lg:h-[8rem]">
+                    <p className="text-sm ml:text-[1rem] tracking-tight leading-tight">{description}</p>
+                </div>
+                <div className="mt-[0.5rem] mb-[1rem] 2xl:mb-[1.5rem] mx-[1.5rem] flex justify-around">
+                    <ProjectButton url={repo} ico={<AiOutlineGithub />} />
+                    <ProjectButton url={deploy} ico={<AiOutlineLink />} />
+                </div>
+                {/* <div className="hidden lg:flex flex-col	h-[15rem]">
+                <div className="mb-auto mt-[1rem] mx-[1.7rem] h-[10rem]">
+                    <p className="tracking-tight leading-tight">{description}</p>
+                </div>
+                <div className="p-[1.5rem] flex justify-around">
+                    <ProjectButton url={repo} ico={<AiOutlineGithub />} />
+                    <ProjectButton url={deploy} ico={<AiOutlineLink />} />
+                </div>
+            </div> */}
             </div>
         </div>
     )
