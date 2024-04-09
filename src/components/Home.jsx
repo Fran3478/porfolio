@@ -1,8 +1,9 @@
 import SocialButton from "./buttons/SocialButton"
+import SwitchLanguage from "./buttons/SwitchLanguage"
 
 const Home = () => {
   return (
-    <div id='home' className="bg-[#062446] flex min-w-screen w-screen min-h-screen h-screen flex-col md:flex-row overflow-hidden">
+    <div id='home' className="bg-[#062446] flex min-w-screen w-screen min-h-screen h-screen flex-col md:flex-row overflow-hidden relative">
       <div className="w-full h-2/3 flex items-center sm:relative md:h-full md:w-2/3 select-none">
         <div className="w-fit m-auto text-center px-[1rem] md:px-[5rem]">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white">Francisco Hernandez</h1>
@@ -16,6 +17,7 @@ const Home = () => {
           <img className="pointer-events-none w-[12rem] h-[12rem] lg:w-[17rem] lg:h-[17rem] aspect-square object-cover" src="https://res.cloudinary.com/dacbde3so/image/upload/v1710809019/portfolio-img/jhxhwyvlwl73to5ny4la.webp" alt="photo" />
         </div>
       </div>
+      <SwitchLanguage/>
     </div>
   )
 }

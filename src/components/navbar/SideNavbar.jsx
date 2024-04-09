@@ -36,7 +36,7 @@ const SideNavbar = () => {
         }
     ]
     return (
-        <div className="hidden w-[4rem] h-screen right-0 fixed z-50 md:flex flex-col mr-[2rem]">
+        <div className="hidden w-[4rem] h-screen right-0 fixed z-40 md:flex flex-col mr-[2rem]">
             <div className="m-auto text-white text-2xl">
                 {
                     buttons.map((button) => (
