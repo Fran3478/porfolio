@@ -211,7 +211,12 @@
             "title": "Send me a message!",
             "subtitle": "Got a question or a proposal, or just want to chat about something?",
             "contact_button": "Contact me!",
-            "send_button": "Send",
+            "send_button": {
+                "normal": "Send",
+                "loading": "Sending...",
+                "sended": "Sended",
+                "failed": "Sending Failed"
+            },
             "info": "Click the above button to open your email app or just fill the form",
             "form": {
                 "name": "Name",
@@ -447,7 +452,12 @@
             "title": "¡Envíame un mensaje!",
             "subtitle": "¿Tenes alguna pregunta o propuesta, o simplemente quieres charlar sobre algo?",
             "contact_button": "Contactame!",
-            "send_button": "Enviar",
+            "send_button": {
+                "normal": "Enviar",
+                "loading": "Enviando...",
+                "sended": "Enviado",
+                "failed": "Envio Fallido"
+            },
             "info": "Haz clic en el botón anterior para abrir tu aplicación de correo electrónico o simplemente completa el formulario",
             "form": {
                 "name": "Nombre",
