@@ -6,9 +6,9 @@ import ProjectButton from "../buttons/ProjectButton";
 const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) => {
 
     return (
-        <div className="text-white max-w-[30rem] col-span-3 lg:col-span-4 bg-[#155561] rounded-b-lg pb-6 shadow-xl shadow-[#155661d2]">
-            <div className="flex flex-col justify-center text-center">
-                <img className="min-w-[100%] max-w-[25rem] aspect-video object-cover" src={urlImg} alt={alt} />
+        <div className="text-white max-w-[30rem] col-span-3 lg:col-span-4 bg-[#155561] rounded-b-lg pb-6 shadow-md shadow-[#155661d2]">
+            <div className="flex flex-col justify-center text-center overflow-hidden">
+                <img className="min-w-[100%] min-h-[100%] max-w-[25rem] object-cover" src={urlImg} alt={alt} />
                 <Status status={status} />
                 <p className="font-bold text-base md:text-2xl text-white">{title}</p>
             </div>
