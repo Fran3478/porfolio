@@ -17,7 +17,7 @@ const SendButton = ({ onClick, status }) => {
                             {translation.contact.send_button.loading}
                         </span>
                         <span className={`${status !== "ok"? "-translate-x-full" : "translate-x-0"} bg-green-50 absolute inset-0 flex items-center justify-center w-full h-full text-[#45a974] duration-300 text-lg md:text-2xl`}>
-                            <svg className="inline h-7 w-7 text-3xl">
+                            <svg className="h-7 w-7 mr-5 text-3xl">
                                 <AiOutlineCheckCircle/>
                             </svg>
                             {translation.contact.send_button.sended}
