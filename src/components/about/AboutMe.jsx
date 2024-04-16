@@ -19,7 +19,8 @@ const AboutMe = () => {
                         }}
                         whileInView={{
                             transition: {
-                                duration: 0.5
+                                duration: 0.5,
+                                delay: 0.2
                             },
                             opacity: 1,
                             x: 0
@@ -38,7 +39,8 @@ const AboutMe = () => {
                         }}
                         whileInView={{
                             transition: {
-                                duration: 0.5
+                                duration: 0.5,
+                                delay: 0.2
                             },
                             opacity: 1,
                             x: 0
@@ -57,7 +59,8 @@ const AboutMe = () => {
                         }}
                         whileInView={{
                             transition: {
-                                duration: 0.5
+                                duration: 0.5,
+                                delay: 0.2
                             },
                             opacity: 1,
                             y: 0
