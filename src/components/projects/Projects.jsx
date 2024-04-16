@@ -21,6 +21,9 @@ const Projects = () => {
                             delay: 0.2
                         }
                     }}
+                    viewport={{
+                        once: true
+                    }}
                     className="m-auto"
                 >
                     <Container />
