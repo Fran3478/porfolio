@@ -1,5 +1,5 @@
-import SocialButton from "./buttons/SocialButton"
-import SwitchLanguage from "./buttons/SwitchLanguage"
+import SocialButton from "../buttons/SocialButton"
+import SwitchLanguage from "../buttons/SwitchLanguage"
 import { motion } from "framer-motion"
 
 const Home = () => {
