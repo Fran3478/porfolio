@@ -5,7 +5,7 @@ const Introduction = () => {
 
     return (
         <div className="flex pt-5">
-            <div className="p-5  ml:p-7 rounded-lg shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] bg-[#ace9c368]">
+            <div className="p-5  ml:p-7 rounded-lg shadow-lg bg-[#ace9c368]">
                 <h2 className="text-xl md:text-2xl lg:text-3xl text-[#062446] font-bold pb-3">{translation.about.me_section.title}</h2>
                 <p className="text-[#062446] tracking-tight leading-tight" >{translation.about.me_section.intro}</p>
             </div>
