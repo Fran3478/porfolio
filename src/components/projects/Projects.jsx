@@ -10,7 +10,7 @@ const Projects = () => {
                 <h1 className="text-center text-2xl md:text-3xl lg:text-5xl text-[#155561] font-extrabold pb-[2rem]">{translation.project.title}</h1>
                 <motion.div
                     initial={{
-                        y:200,
+                        y:80,
                         opacity:0
                     }}
                     whileInView={{

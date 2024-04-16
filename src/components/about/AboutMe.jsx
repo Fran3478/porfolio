@@ -15,7 +15,7 @@ const AboutMe = () => {
                         className="ml:col-span-6 ml:col-start-1 ml:row-start-1"
                         initial={{
                             opacity: 0,
-                            x: -200,
+                            x: -80,
                         }}
                         whileInView={{
                             transition: {
@@ -35,7 +35,7 @@ const AboutMe = () => {
                         className="ml:col-start-7 ml:col-span-6 ml:row-span-2 ml:self-center"
                         initial={{
                             opacity: 0,
-                            x: 200
+                            x: 80
                         }}
                         whileInView={{
                             transition: {
@@ -55,7 +55,7 @@ const AboutMe = () => {
                         className="ml:col-span-6 ml:col-start-1 ml:row-start-2"
                         initial={{
                             opacity: 0,
-                            y: 200
+                            y: 80
                         }}
                         whileInView={{
                             transition: {
