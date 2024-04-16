@@ -14,17 +14,17 @@ const SwitchLanguage = () => {
             <label className="flex items-center relative w-max cursor-pointer select-none">
                 <input 
                     type="checkbox"
-                    className="appearance-none transition-colors cursor-pointer w-14 h-7 rounded-full outline-none bg-[#416b9a]"
+                    className="appearance-none transition-colors cursor-pointer w-16 h-9 rounded-full outline-none bg-[#416b9a]"
                     checked={isChecked}
                     onChange={handleInput}
                 />
-                <p className="absolute flex items-center w-full justify-between px-2" >
+                <p className="absolute flex items-center w-full justify-between px-3" >
                     <span className={`font-medium text-xs uppercase transition-colors ${isChecked ? "text-gray-200" : "text-[#416b9a]"}`}> Es </span>
                     <span className={`font-medium text-xs uppercase transition-colors ${!isChecked ? "text-gray-200" : "text-[#416b9a]"}`}> En </span>
                 </p>
-                    <div className={`w-7 h-7 right-7 absolute rounded-full transform transition-transform duration-500 bg-gray-200 uppercase flex ${isChecked && "translate-x-7" }`}>
-                        <span className="text-[#416b9a] text-sm font-bold m-auto" >{`${isChecked ? "en" : "es"}`}</span>
-                    </div>
+                <div className={`w-7 h-7 left-1 absolute rounded-full transform transition-transform duration-500 bg-gray-200 uppercase drop-shadow-md flex ${isChecked && "translate-x-7" }`}>
+                    <span className="text-[#416b9a] text-sm font-bold m-auto" >{`${isChecked ? "en" : "es"}`}</span>
+                </div>
             </label>
         </div>
     )
