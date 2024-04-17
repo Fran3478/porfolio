@@ -1,13 +1,7 @@
 import { useLanguage } from "../../../hooks/useLanguage"
 import BackgroundItem from "./BackgroundItem"
-import { useState } from "react"
-
 
 const BackgroundContainer = () => {
-    const [show, setShow] = useState(0)
-    const handleShow = (val) => {
-        setShow(val)
-    }
     const { translation } = useLanguage()
 
     return (
@@ -18,13 +12,10 @@ const BackgroundContainer = () => {
                     translation.about.background_section.knowledge.map((item) => (
                         <BackgroundItem
                             key={item.id}
-                            id={item.id}
                             title={item.title}
                             dates={item.dates}
                             description={item.description}
                             urlImg={item.img}
-                            show={show}
-                            handleShow={handleShow}
                         />
                     ))
                 }
