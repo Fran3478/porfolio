@@ -101,7 +101,7 @@ const ContactForm = () => {
 
     return (
         <div className="w-full flex flex-col pt-10 md:py-0 md:px-[2rem] relative">
-            <div className="w-full m-auto flex flex-col md:flex-row md:inline-flex md:justify-between pb-16">
+            <div className="w-full m-auto flex flex-col md:flex-row md:inline-flex md:justify-between xl:pb-[4rem]">
                 <div className="w-full md:w-[45%] relative">
                     <input
                         id="name"
