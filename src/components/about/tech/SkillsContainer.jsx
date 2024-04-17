@@ -19,7 +19,7 @@ const SkillsContainer = ({ skills }) => {
     }
 
     return (
-        <div className="grid grid-cols-2 xxs:grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 ml:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 grid-flow-row rounded-lg gap-2 ml:max-w-[36rem] 2xl:max-w-[46rem] m-auto">
+        <div className="grid grid-cols-2 xxs:grid-cols-3 xs:grid-cols-4 sm:grid-cols-5 ml:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 grid-flow-row rounded-lg gap-2 ml:max-w-[36rem] 2xl:max-w-[46rem] m-auto pointer-events-none select-none">
             {
                 skills.map((skill, i) => (
                     <motion.div
