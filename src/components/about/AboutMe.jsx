@@ -40,7 +40,8 @@ const AboutMe = () => {
                         whileInView={{
                             transition: {
                                 duration: 0.5,
-                                delay: 0.2
+                                delay: 0.2,
+                                delayChildren: 0.1
                             },
                             opacity: 1,
                             x: 0

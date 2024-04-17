@@ -14,7 +14,7 @@ const SkillsContainer = ({ skills }) => {
         }),
         hidden: {
             opacity: 0,
-            x: -200
+            x: -50
         }
     }
 
@@ -25,7 +25,10 @@ const SkillsContainer = ({ skills }) => {
                     <motion.div
                         key={skill.title}
                         initial="hidden"
-                        animate="visible"
+                        whileInView="visible"
+                        viewport={{
+                            once: true
+                        }}
                         custom={i}
                         variants={variants}
                     >
