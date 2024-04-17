@@ -52,10 +52,10 @@ const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) 
                 transformStyle: "preserve-3d",
                 transform
             }}
-            className="text-white max-w-[28rem] col-span-1 2ml:col-span-6 15xl:col-span-4 bg-[#155561] bg-opacity-50 rounded-xl shadow-md shadow-[#155661d2]"
+            className="text-white max-w-[28rem] bg-[#155561] bg-opacity-50 rounded-xl shadow-md shadow-[#155661d2] p-3"
         >
             <div 
-                className="bg-[#155561] p-1 m-3 rounded-lg shadow-md shadow-[#155661c5]"
+                className="bg-[#155561] p-1 rounded-lg shadow-md shadow-[#155661c5]"
                 style={{
                     transform: "translateZ(75px)",
                     transformStyle: "preserve-3d"
