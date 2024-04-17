@@ -1,8 +1,10 @@
 import PropTypes from "prop-types"
 import { useLanguage } from "../../../hooks/useLanguage"
+import { useState } from "react"
 
-const BackgroundItem = ({ title, dates, description, id, show, handleShow }) => {
+const BackgroundItem = ({ title, dates, description }) => {
     const { translation } = useLanguage()
+    const [show, setShow] = useState(false)
 
     return (
         <ol className="flex flex-col md:flex-row relative border-l border-[#416B9A]">
@@ -14,15 +16,15 @@ const BackgroundItem = ({ title, dates, description, id, show, handleShow }) => 
                 </p>
                 <div className="tracking-tight	">
                     {
-                        show !== id ?
+                        !show ?
                             <>
                                 <p className="my-2 text-sm lg:text-base font-normal text-[#062446] line-clamp-1 sm:line-clamp-2 lg:line-clamp-none">{description.split(' ').slice(0, 30).join(' ') + '...'}</p>
-                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { handleShow(id) })}>{translation.about.background_section.button_more}</p>
+                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { setShow(!show) })}>{translation.about.background_section.button_more}</p>
                             </>
                             :
                             <>
                                 <p className="my-2 text-sm lg:text-base font-normal text-[#062446]">{description}</p>
-                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { handleShow(0) })}>{translation.about.background_section.button_less}</p>
+                                <p className="hover:cursor-pointer text-sky-600 underline w-fit" onClick={(() => { setShow(!show) })}>{translation.about.background_section.button_less}</p>
                             </>
                     }
                 </div>
