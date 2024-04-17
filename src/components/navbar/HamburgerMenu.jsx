@@ -8,7 +8,7 @@ const HamburgerMenu = ({ handleNav }) => {
     const { translation, ln } = useLanguage()
     return (
         <div className='fixed w-full h-screen bg-[#51a6f0] bg-gradient-to-br from-[#51a6f0] to-[#416b9a] flex flex-col justify-center items-center z-[98] md:hidden'>
-            <a href='#main' className='w-[70%] sm:w-56 flex justify-center items-center rounded-full shadow-md bg-[#062446] text-white m-2 p-4 cursor-pointer active:scale-110 ease-in duration-200' onClick={handleNav}>
+            <a href='#home' className='w-[70%] sm:w-56 flex justify-center items-center rounded-full shadow-md bg-[#062446] text-white m-2 p-4 cursor-pointer active:scale-110 ease-in duration-200' onClick={handleNav}>
                 <AiOutlineHome size={20} />
                 <span className='pl-4'>{translation.nav.home}</span>
             </a>
