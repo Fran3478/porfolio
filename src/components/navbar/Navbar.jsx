@@ -9,10 +9,6 @@ const Navbar = () => {
     const [showNav, setShowNav] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
 
-    const handleNav = () => {
-        setNav(!nav)
-    }
-
     const handleVisibility = () => {
         if (typeof window !== 'undefined') {
             if (window.scrollY > lastScrollY) {
@@ -36,15 +32,19 @@ const Navbar = () => {
         <div>
             {
                 !nav ? (
-                    <AiOutlineMenu onClick={handleNav} className={`fixed w-[1.8rem] mt-4 left-4 z-[99] md:hidden transition-transform duration-300 transform ${showNav ? 'translate-y-0' : '-translate-y-96'}`} color='white' size={28} />
+                    <button onClick={() => setNav(!nav)} className={`bg-[#062446] bg-opacity-70 rounded-lg p-[0.3rem] fixed mt-4 left-4 z-[99] md:hidden transition-transform duration-300 transform ${showNav ? 'translate-y-0' : '-translate-y-96'}`}>
+                        <AiOutlineMenu color='white' size={28} />
+                    </button>
                 ) : (
-                    <AiOutlineClose onClick={handleNav} className='fixed w-[1.8rem] top-4 left-4 z-[99] md:hidden' color='white' size={28} />
+                    <button onClick={() => setNav(!nav)} className='bg-[#062446] bg-opacity-70 rounded-lg p-[0.3rem] fixed top-4 left-4 z-[99] md:hidden'>
+                        <AiOutlineClose color='white' size={28} />
+                    </button>
                 )
             }
 
             {
                 nav ? (
-                    <HamburgerMenu handleNav={handleNav} />
+                    <HamburgerMenu handleNav={() => setNav(!nav)} />
                 ) : (
                     null
                 )

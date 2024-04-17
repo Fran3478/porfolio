@@ -1,5 +1,12 @@
 {
     "en": {
+        "nav": {
+            "home": "Home",
+            "about": "About Me",
+            "projects": "Projects",
+            "contact": "Contact",
+            "resume": "Resume"
+        },
         "about": {
             "title": "About",
             "me_section": {
@@ -241,6 +248,13 @@
         }
     },
     "es": {
+        "nav": {
+            "home": "Inicio",
+            "about": "Acerca",
+            "projects": "Proyectos",
+            "contact": "Contacto",
+            "resume": "Curriculum"
+        },
         "about": {
             "title": "Acerca",
             "me_section": {

@@ -5,8 +5,8 @@ import Status from "../projects/Status";
 import ProjectButton from "../buttons/ProjectButton";
 import { useRef } from "react";
 
-const ROTATION_RANGE = 32.5
-const HALF_ROTATION_RANGE = 32.5 / 2
+const ROTATION_RANGE = 10
+const HALF_ROTATION_RANGE = 10 / 2
 
 const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) => {
     
@@ -31,8 +31,11 @@ const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) 
         const mouseX = (e.clientX - rect.left) * ROTATION_RANGE
         const mouseY = (e.clientY - rect.top) * ROTATION_RANGE
 
-        x.set((mouseY / height - HALF_ROTATION_RANGE) * -1)
-        y.set(mouseX / width - HALF_ROTATION_RANGE)
+        const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1
+        const rY = mouseX / width - HALF_ROTATION_RANGE
+
+        x.set(rX)
+        y.set(rY)
     }
 
     const handleMouseLeave = () => {
@@ -49,17 +52,17 @@ const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) 
                 transformStyle: "preserve-3d",
                 transform
             }}
-            className="text-white max-w-[28rem] col-span-1 2ml:col-span-6 15xl:col-span-4 bg-[#155561] bg-opacity-50 rounded-xl shadow-md shadow-[#155661d2]"
+            className="text-white max-w-[28rem] bg-[#155561] bg-opacity-50 rounded-xl shadow-md shadow-[#155661d2] p-3"
         >
             <div 
-                className="bg-[#155561] p-1 m-3 rounded-lg shadow-md shadow-[#155661c5]"
+                className="bg-[#155561] p-1 rounded-lg shadow-md shadow-[#155661c5]"
                 style={{
                     transform: "translateZ(75px)",
                     transformStyle: "preserve-3d"
                 }}
             >
                 <div 
-                    className="flex flex-col justify-center text-center overflow-hidden mt-[1rem] mx-[1rem] bg-white/20 rounded-md p-2"
+                    className="flex flex-col justify-center text-center overflow-hidden mt-[1rem] mx-[1rem] bg-white/20 rounded-md p-2 select-none pointer-events-none"
                     style={{
                         transform: "translateZ(75px)"
                     }}
@@ -74,7 +77,7 @@ const ProjectCard = ({ title, urlImg, alt, description, deploy, repo, status }) 
                         transform: "translateZ(50px)"
                     }}
                 >
-                    <div className="mt-[1rem] mx-[1.7rem] 2ml:h-[9rem] lg:h-[8rem]">
+                    <div className="mt-[1rem] mx-[1.7rem] 2ml:h-[9rem] lg:h-[8rem] select-none pointer-events-none">
                         <p className="text-sm ml:text-[1rem] tracking-tight leading-tight">{description}</p>
                     </div>
                     <div className="mt-[0.5rem] mb-[1rem] 2xl:mb-[1.5rem] mx-[1.5rem] flex justify-around">

@@ -101,13 +101,13 @@ const ContactForm = () => {
 
     return (
         <div className="w-full flex flex-col pt-10 md:py-0 md:px-[2rem] relative">
-            <div className="w-full m-auto flex flex-col md:flex-row md:inline-flex md:justify-between pb-16">
+            <div className="w-full m-auto flex flex-col md:flex-row md:inline-flex md:justify-between xl:pb-[4rem]">
                 <div className="w-full md:w-[45%] relative">
                     <input
                         id="name"
                         name="name"
                         type="text"
-                        className={`w-full text-xl border-b ${name ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
+                        className={`w-full text-xl outline-none py-1 border-b-2 ${nameError ? "border-orange-400" : name ? " border-[#1ab0ba]" : "border-gray-300 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
                         value={name}
                         onChange={handleChange}
                         onBlur={handleFocusOut}
@@ -124,7 +124,7 @@ const ContactForm = () => {
                         id="email"
                         name="email"
                         type="email"
-                        className={`w-full text-xl border-b ${email ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
+                        className={`w-full text-xl outline-none py-1 border-b-2 ${emailError ? "border-red-400" : email ? "border-[#1ab0ba]" : "border-gray-300 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
                         value={email}
                         onChange={handleChange}
                         onBlur={handleFocusOut}
@@ -142,7 +142,7 @@ const ContactForm = () => {
                     id="message"
                     name="message"
                     type="textarea"
-                    className={`w-full h-fit text-xl border-b ${message ? "outline-none py-1 border-b-2 border-[#1ab0ba]" : "border-gray-300 focus:outline-none py-1 focus:border-b-2 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
+                    className={`w-full h-fit text-xl outline-none py-1 border-b-2 ${messageError ? "border-red-400" : message ? "border-[#1ab0ba]" : "border-gray-300 focus:border-[#1ab0ba]"} transition-colors duration-300 peer`}
                     value={message}
                     onChange={handleChange}
                     onBlur={handleFocusOut}
